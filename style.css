@@ -294,6 +294,11 @@ html, body {
 /* 添加一点悬浮效果 */
 .left-button:hover, .right-button:hover {
   opacity: 0.8;
+  filter: brightness(0.5); 
+  transition: 0.3s;
+}
+.left-button:hover, .right-button:active {
+  filter: brightness(0.7); /* 点击时的效果 */
 }
 /* 指示器样式设置 */
 .indicator-section {
