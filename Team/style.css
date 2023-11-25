@@ -1,0 +1,787 @@
+/* 导入字体 */
+@font-face {
+  font-family: 'Inter-Black';
+  src: url('../Font-Inter/Inter-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../Font-Inter/Inter-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-ExtraBold';
+  src: url('../Font-Inter/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-ExtraLight';
+  src: url('../Font-Inter/Inter-ExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('../Font-Inter/Inter-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('../Font-Inter/Inter-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../Font-Inter/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('../Font-Inter/Inter-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter-Thin';
+  src: url('../Font-Inter/Inter-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 16px; /* 滚动条宽度 */
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 滚动条轨道颜色 */
+}
+::-webkit-scrollbar-thumb {
+  background: #eaeaea; /* 滚动条滑块颜色 */
+  border-radius: 6px; /* 滚动条滑块圆角 */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #797979; /* 滚动条滑块悬停颜色 */
+}
+/* Firefox 滚动条样式 */
+body {
+  scrollbar-width: thin; /* 设置滚动条宽度为细 */
+  scrollbar-color: #eaeaea #f1f1f1; /* 滚动条滑块颜色和轨道颜色 */
+}
+
+/* 全局设置 */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.mac-book-pro-16-1,
+.mac-book-pro-16-1 * {
+  box-sizing: border-box;
+}
+.mac-book-pro-16-1 {
+  background: #ffffff;
+  width: 1728px;
+  height: 3511px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Header */
+
+.full-header-logo {
+  width: 206px;
+  height: 103px;
+  position: absolute;
+  left: 68px;
+  top: 18px;
+}
+.header-team-title {
+  color: #000000;
+  text-align: left;
+  font: 700 48px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 791px;
+  top: 39px;
+  width: 147px;
+  height: 49px;
+  cursor: default;
+}
+.header-team {
+  width: 29px;
+  height: 24px;
+  position: absolute;
+  left: 1577px;
+  top: 56px;
+}
+.header-menu {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 1663px;
+  top: 56px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.header-search {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 1520px;
+  top: 56px;
+}
+
+
+/* ！！ */
+.background-img {
+  width: 1728px;
+  height: 1621px;
+  position: fixed;
+  left: 0px;
+  top: 140px;
+}
+.masking-section {
+  background: rgba(255, 255, 255, 0.88);
+  width: 1728px;
+  height: 1622px;
+  position: fixed;
+  left: 0px;
+  top: 139px;
+}
+
+/* 导航栏 */
+.nav-team {
+  color: #000000;
+  text-align: left;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 46px;
+  top: 217px;
+  width: 61px;
+  height: 23px;
+}
+.nav-team:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+}
+.nav-team:focus {
+  color: #587558; /* 点击后变绿色 */
+}
+.nav-news {
+  color: #000000;
+  text-align: left;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 46px;
+  top: 253px;
+  width: 61px;
+  height: 23px;
+}
+.nav-news:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+}
+.nav-news:focus {
+  color: #587558; /* 点击后变绿色 */
+}
+.nav-research {
+  color: #000000;
+  text-align: left;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 46px;
+  top: 289px;
+  width: 96px;
+  height: 23px;
+}
+.nav-research:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+}
+.nav-research:focus {
+  color: #587558; /* 点击后变绿色 */
+}
+.nav-publications {
+  color: black;
+  text-align: left;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 46px;
+  top: 325px;
+  width: 141px;
+  height: 23px;
+}
+.nav-publications:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+}
+.nav-publications:focus {
+  color: #587558; /* 点击后变绿色 */
+}
+.nav-gallery {
+  color: black;
+  text-align: left;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 46px;
+  top: 361px;
+  width: 111px;
+  height: 23px;
+}
+.nav-gallery:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+}
+.nav-gallery:focus {
+  color: #587558; /* 点击后变绿色 */
+}
+
+
+
+/* 信息介绍 */
+/* Prof.Wang */
+.wqq-img {
+  width: 230px;
+  height: 313px;
+  position: absolute;
+  left: 301px;
+  top: 218px;
+}
+.wqq-title {
+  color: #000000;
+  text-align: left;
+  font: 700 48px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 562px;
+  top: 210px;
+  width: 558px;
+  height: 58px;
+}
+.wqq-h2 {
+  color: #000000;
+  text-align: left;
+  font: 600 40px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 564px;
+  top: 282px;
+  width: 553px;
+  height: 143px;
+}
+.wqq-h3 {
+  color: #6c6c6c;
+  text-align: left;
+  font: 600 27px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 566px;
+  top: 437px;
+  width: 465px;
+  height: 94px;
+}
+.wqq-text {
+  color: #000000;
+  text-align: left;
+  font: 500 23px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 335px;
+  top: 572px;
+  width: 785px;
+  height: 480px;
+}
+.google-icon {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 1256px;
+  top: 439px;
+}
+.scholar-link {
+  color: #000000;
+  text-align: left;
+  font: 600 34px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 1256px;
+  top: 530px;
+  width: auto; /* 根据需要调整 */
+  white-space: normal; /* 允许文本换行 */
+}
+.address-icon {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  left: 1254px;
+  top: 773px;
+}
+.address-link {
+  color: #000000;
+  text-align: left;
+  font: 600 30px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 1254px;
+  top: 865px;
+  width: 356px;
+  height: 157px;
+}
+.email-address {
+  color: #000000;
+  text-align: left;
+  font: 600 34px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 1254px;
+  top: 345px;
+  width: 368px;
+  height: 57px;
+}
+.email-icon {
+  width: 88px;
+  height: 88px;
+  position: absolute;
+  left: 1244px;
+  top: 245px;
+}
+.wqq-green-block {
+  width: 8px;
+  height: 442px;
+  position: absolute;
+  left: 301px;
+  top: 577px;
+  overflow: visible;
+}
+
+
+/* phd */
+.phd-green-block {
+  width: 8px;
+  height: 34px;
+  position: absolute;
+  left: 87px;
+  top: 1104px;
+  overflow: visible;
+}
+.phd-student-info {
+  color: #000000;
+  text-align: left;
+  font: 600 47px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 111px;
+  top: 1092px;
+  width: 369px;
+  height: 58px;
+}
+.sym-img {
+  width: 194px;
+  height: 262px;
+  position: absolute;
+  left: 90px;
+  top: 1220px;
+}
+.sym-title {
+  color: #000000;
+  text-align: left;
+  font: 600 40px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 90px;
+  top: 1494px;
+  width: 237px;
+  height: 42px;
+}
+.sym-intro {
+  color: #000000;
+  text-align: left;
+  font: 500 23px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 92px;
+  top: 1546px;
+  width: 464px;
+  height: 224px;
+}
+.zhy-img {
+  width: 194px;
+  height: 262px;
+  position: absolute;
+  left: 615px;
+  top: 1220px;
+}
+.zhy-title {
+  color: #000000;
+  text-align: left;
+  font: 600 40px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 613px;
+  top: 1494px;
+  width: 316px;
+  height: 42px;
+}
+.zhy-intro {
+  color: #000000;
+  text-align: left;
+  font: 500 23px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 614px;
+  top: 1546px;
+  width: 464px;
+  height: 190px;
+}
+.look-forward-phd {
+  color: #000000;
+  text-align: left;
+  font: 800 36px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 1153px;
+  top: 1572px;
+  width: 508px;
+  height: 176px;
+}
+.ellipse-phd1 {
+  background: #000000;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 1575px;
+  top: 1736px;
+}
+.ellipse-phd2 {
+  background: #000000;
+  border-radius: 50%;
+  width: 15px;
+  height: 16px;
+  position: absolute;
+  left: 1595px;
+  top: 1736px;
+}
+.ellipse-phd3 {
+  background: #000000;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 1614px;
+  top: 1736px;
+}
+/*MES info*/
+.mes-green-block {
+  width: 8px;
+  height: 34px;
+  position: absolute;
+  left: 87px;
+  top: 1843px;
+  overflow: visible;
+}
+.mes-info {
+  color: #000000;
+  text-align: left;
+  font: 600 47px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 111px;
+  top: 1831px;
+  width: 369px;
+  height: 58px;
+}
+.myb-intro {
+  color: #000000;
+  text-align: left;
+  font: 500 23px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 88px;
+  top: 2298px;
+  width: 469px;
+  height: 224px;
+}
+.myb-title {
+  color: #000000;
+  text-align: left;
+  font: 600 40px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 88px;
+  top: 2240px;
+  width: 344px;
+  height: 41px;
+}
+.myb-img {
+  width: 193px;
+  height: 263px;
+  position: absolute;
+  left: 364px;
+  top: 1962px;
+}
+.cy-img {
+  width: 194px;
+  height: 263px;
+  position: absolute;
+  left: 898px;
+  top: 1962px;
+}
+.cy-title {
+  color: #000000;
+  text-align: left;
+  font: 600 40px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 616px;
+  top: 2240px;
+  width: 237px;
+  height: 38px;
+}
+.cy-intro {
+  color: #000000;
+  text-align: left;
+  font: 500 23px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 616px;
+  top: 2298px;
+  width: 477px;
+  height: 221px;
+}
+.yqj-img {
+  width: 197px;
+  height: 263px;
+  position: absolute;
+  left: 1431px;
+  top: 1962px;
+}
+.yqj-title {
+  color: #000000;
+  text-align: left;
+  font: 600 40px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 1153px;
+  top: 2240px;
+  width: 422px;
+  height: 41px;
+}
+.yqj-intro {
+  color: #000000;
+  text-align: left;
+  font: 500 23px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 1153px;
+  top: 2298px;
+  width: 477px;
+  height: 168px;
+}
+.wb-img {
+  width: 194px;
+  height: 263px;
+  position: absolute;
+  left: 90px;
+  top: 2554px;
+}
+.wb-intro {
+  color: #000000;
+  text-align: left;
+  font: 500 23px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 90px;
+  top: 2892px;
+  width: 477px;
+  height: 192px;
+}
+.wb-title {
+  color: #000000;
+  text-align: left;
+  font: 600 40px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 87px;
+  top: 2826px;
+  width: 237px;
+  height: 40px;
+}
+.djs-title {
+  color: #000000;
+  text-align: left;
+  font: 600 40px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 615px;
+  top: 2825px;
+  width: 286px;
+  height: 39px;
+}
+.djs-img {
+  width: 192px;
+  height: 263px;
+  position: absolute;
+  left: 616px;
+  top: 2554px;
+}
+.djs-intro {
+  color: #000000;
+  text-align: left;
+  font: 500 23px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 615px;
+  top: 2892px;
+  width: 469px;
+  height: 189px;
+}
+
+.look-forward-mes {
+  color: #000000;
+  text-align: left;
+  font: 800 36px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 1153px;
+  top: 2890px;
+  width: 489px;
+  height: 176px;
+}
+.ellipse-mes1 {
+  background: #000000;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 1575px;
+  top: 3065px;
+}
+.ellipse-mes2 {
+  background: #000000;
+  border-radius: 50%;
+  width: 15px;
+  height: 16px;
+  position: absolute;
+  left: 1595px;
+  top: 3065px;
+}
+.ellipse-mes3 {
+  background: #000000;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 1614px;
+  top: 3065px;
+}
+
+
+/* 脚栏设置 */
+.foot-section {
+  background: #eaeaea;
+  width: 1728px;
+  height: 283px;
+  position: absolute;
+  left: 0px;
+  top: 3228px;
+}
+.foot-minilogo {
+  width: 60px;
+  height: 56px;
+  position: absolute;
+  left: 65px;
+  top: 3248px;
+  cursor:pointer;
+}
+.foot-team {
+  color: black;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 65px;
+  top: 3317px;
+  width: 60px;
+  height: 24px;
+}
+.foot-team:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+}
+.foot-team:focus {
+  color: #587558; /* 点击后变绿色 */
+}
+.foot-news {
+  color: black;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 65px;
+  top: 3354px;
+  width: 60px;
+  height: 23px;
+}
+.foot-news:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+}
+.foot-news:focus {
+  color: #587558; /* 点击后变绿色 */
+}
+.foot-research {
+  color: black;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 65px;
+  top: 3391px;
+  width: 95px;
+  height: 23px;
+}
+.foot-research:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+}
+.foot-research:focus {
+  color: #587558; /* 点击后变绿色 */
+}
+.foot-publications {
+  color: black;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 65px;
+  top: 3428px;
+  width: 139px;
+  height: 23px;
+}
+.foot-publications:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+}
+.foot-publications:focus {
+  color: #587558; /* 点击后变绿色 */
+}
+.foot-gallery {
+  color: black;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 65px;
+  top: 3464px;
+  width: 109px;
+  height: 24px;
+}
+.foot-gallery:hover {
+  color: #fccf00; /* 鼠标悬停时变黄色 */
+  transition: color 0.4s; /* 过渡效果 */
+  cursor: pointer;
+}
+.foot-gallery:focus {
+  color: #587558; /* 点击后变绿色 */
+  cursor: pointer;
+}
+.foot-intro {
+  color: #000000;
+  text-align: left;
+  font: 500 16px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 1475px;
+  top: 3340px;
+  width: 200px;
+  height: 90px;
+}
+.foot-logo1 {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 1475px;
+  top: 3262px;
+}
+.foot-logo2 {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 1553px;
+  top: 3262px;
+}
