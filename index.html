@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 标头 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="SEU-Emblem.png">
+    <title>Wanglab</title>
+    <!-- 应用于所有元素的通用样式 -->
+    <style>
+      a, button, input, select, h1, h2, h3, h4, h5, * {
+        margin: 0; /* 移除外边距 */
+        padding: 0; /* 移除内边距 */
+        border: none; /* 移除边框 */
+        text-decoration: none; /* 移除文本装饰，如下划线 */
+        appearance: none; /* 移除默认的浏览器样式 */
+        background: none; /* 移除背景 */
+        -webkit-font-smoothing: antialiased; /* 在浏览器中改善字体渲染 */
+      }
+    </style>
+    
+    <!-- 调整页面大小 -->
+    <script>
+      window.onload = function() {
+        var scale = window.innerWidth / 1744; // 1728px是设计宽度
+        document.body.style.transform = 'scale(' + scale + ')';
+        document.body.style.transformOrigin = 'top left';
+        document.body.style.width = (1744 * scale) + 'px';
+      };
+    </script>
+  </head>
+
+  <!-- 网页主体 -->
+  <body class="container">
+    <div class="mac-book-pro-16-1">
+
+      <!-- 首栏区域 -->
+      <img class="header-background" src="header-background.png" />
+      <img class="header-full-logo" src="full-logo-white.png" />
+      <div class="header-slogan">
+        We are creating the future here
+      </div>
+      <a href="https://www.google.com" target="_blank"><img class="header-search" src="search.png" alt="Search"/></a>
+      <a href="../Team/index.html"><img class="header-team" src="team.png"  alt="Team"/></a>
+      <img class="header-menu" src="menu-button.png" />
+     
+
+      <!-- 内容区域 -->
+      <!-- 导航栏 -->
+      <a href="../Team/index.html" class="team">Team</a>
+      <a href="../News/index.html" class="news">News</a>
+      <a href="../Research/index.html" class="research">Research</a>
+      <a href="../Publications/index.html" class="publications">Publications</a>
+      <a href="../Gallery/index.html" class="gallery">Gallery</a>
+
+      <!-- 新闻展示区 -->
+      <div id="news-photo" class="news-img-section">
+      <!-- 图片将通过 JS 设置 -->
+      </div>
+      <img class="right-button" src="right-button.png" />
+      <img class="left-button" src="left-button.png" />
+      <!-- 指示器样式 -->
+      <div class="indicator-section photo-indicators"></div>
+
+      <!-- Main-Intro内容 -->
+      <div class="main-intro-sect"></div>
+      <div class="intro-title">Introduction</div>
+      <div class="intro-default">
+        <span class="intro-text">
+          About the lab: The Intelligent Small-scale Robotics Lab (ISSRL)
+          (智能小尺度机器人实验室) is directed by Prof. Qianqian Wang (Chinese: 王乾乾). 
+          Our lab studie small-scale robotics (小尺度机器人学), microrobotic swarm (微机器人集群系统),dynamic
+          self-assembly and micromanipulation (磁驱动的动态自组装及微操作).
+          Our lab has been sponsored by various funding bodies, inlcuding the National Natural Science Foundation of China
+          (国家自然科学基金委员会), Department of Science and Technology of
+          Jiangsu Province (江苏省科学技术厅) and Xiaomi (小米).<br /><br />
+          Keyords: Small-scale Robotics (小尺度机器人学), Microrobotic swarm
+          (微机器人集群系统),Dynamic Self-assembly and Micromanipulation
+          (磁驱动的动态自组装及微操作), Magnetic control medical devices
+          (磁控医疗设备), Flexible Multi-modal micro-miniature Robot and
+          Micro-nano medical device(柔性多模态微小型机器人及微纳医疗器械).<br /><br />
+          Short biography of PI: Prof. Qianqian Wang joined Southeast University
+          in February 2022 and is now serving as the Young Chief Professor at the
+          School of Mechanical Engineering, as well as a doctoral supervisor. He
+          was selected for the National &quot;Overseas High-Level Young Talents
+          Program&quot; and was among the first recipients of the &quot;Xiaomi
+          Young Scholar&quot; and the &quot;MINE Excellent Young Scientist
+          Award.&quot; Additionally, Professor Wang serves as an associate editor,
+          guest editor, and reviewer for multiple professional journals and
+          international conferences, including the IEEE Transactions Series and
+          IEEE IROS.
+        </span>
+      </div>
+      <!-- Main-News内容 -->
+      <div class="main-news-sect"></div>
+      <div class="news-title">News</div>
+      <div class="plus-verticlebar"></div>
+      <div class="plus-horizontalbar"></div>
+      <div class="news-default">
+        <span class="news-text">[2023. 11] Dr. Wang won the "Open Science Excellent Author Program" 
+          due to the high impact of our Advanced Intelligent Systems article </span>
+        <span class="news-link"><a href="https://onlinelibrary.wiley.com/doi/10.1002/aisy.202300108"  target="_blank">[Link]</a></span>
+        <span class="news-text">, which received more than 6,000 downloads in 3 months from worldwide researchers.<br /><br />
+          [2023. 09] 王老师于2023年教师节庆祝大会作为青年教师代表发言，分享了对教育和教师使命的思考和感悟。</span>
+        <span class="news-link"><a href="https://news.seu.edu.cn/2023/0908/c5486a463987/page.htm"  target="_blank">[Link]</a></span>
+        <span class="news-text"><br /><br />[2023. 09] Our Springer book entitled Magnetic Micro and Nanorobot Swarms: 
+          From Fundamentals to Applications is online! This book is focused on the attractive emerging field of micro-/nanorobot swarms (microswarms). It introduces fundamental understandings of various microswarms and demonstrates applications of micro-/nanorobot swarms in different fields. </span>
+        <span class="news-link"><a href="https://link.springer.com/book/9789819930357"  target="_blank">[Link]</a></span>
+        <span class="news-text"><br /><br />[2023. 08] Dr. Wang Won the MINE Outstanding Young Scientist Award（“MINE 2023优秀青年科学家奖”）. </span>
+        <span class="news-link"><a href="https://mp.weixin.qq.com/s/Lc2xN5xDvLRi8hzPNjKGPQ"  target="_blank">[Link]</a></span>
+        <span class="news-text"><br /><br />[2023. 03] Our Science Advances paper "Ultrasound Doppler-guided real-time 
+          navigation of a magnetic microswarm for active endovascular delivery" has been highlighted as "Hot Paper" (Top 0.1%)!</span>
+        <span class="news-link"><a href="https://www.science.org/doi/full/10.1126/sciadv.abe5914"  target="_blank">[Link]</a></span>
+        <span class="news-text"><br /><br />[2022. 11] Dr. Wang won the 1st Xiaomi Young Talents Program（首届“小米青年学者”）[</span>
+        <span class="news-link"><a href="https://mp.weixin.qq.com/s/ffFc8hxB74ggCxY_F0ms3w"  target="_blank">小米公益基金会</a></span>
+        <span class="news-text">][</span>
+        <span class="news-link"><a href="https://mp.weixin.qq.com/s/saWBJu5uC1peF6I-or7-_g"  target="_blank">东南大学教育基金会</a></span>
+        <span class="news-text">].</span>
+      </div>
+
+
+      <!-- 脚栏区域 -->
+      <div class="foot-section"></div>
+      <img class="foot-minilogo" src="foot-minilogo.png"/>
+      <!-- 导航栏 -->
+      <a href="../Team/index.html" class="team2">Team</a>
+      <a href="../News/index.html"class="news2">News</a>
+      <a href="../Research/index.html" class="research2">Research</a>
+      <a href="../Publications/index.html" class="publications2">Publications</a>
+      <a href="../Gallery/index.html" class="gallery2">Gallery</a>
+      <!-- 校徽以及院徽 -->
+      <a href="https://www.seu.edu.cn/" target="_blank"><img class="foot-logo1" src="SEU-Emblem.png" /></a>
+      <a href="https://me.seu.edu.cn/" target="_blank"><img class="foot-logo2" src="SEU-ME-Emblem.png" /></a>
+      <!-- 脚栏介绍信息 -->
+      <div class="foot-intro">
+        Prof. Qianqian Wang, Intelligent Small-scale Robotics Lab, Southeast University
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
