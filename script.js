@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     var currentImageIndex = 0; // 当前显示图片的索引
     var images = [ // 图片路径数组
+      'news-11.jpg',
       'news1.jpg',
       'news2.jpg',
       'news3.jpg',
