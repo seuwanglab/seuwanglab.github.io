@@ -1,0 +1,461 @@
+@charset "UTF-8";
+body {
+  padding-top: px2Rem(70px);
+}
+
+/*媒体查询,不同屏幕下的根元素字体大小设置，利于rem*/
+@media screen and (max-width: 8360px) {
+  html {
+    font-size: 83.6px !important;
+  }
+}
+@media screen and (max-width: 8160px) {
+  html {
+    font-size: 81.6px !important;
+  }
+}
+@media screen and (max-width: 7960px) {
+  html {
+    font-size: 79.6px !important;
+  }
+}
+@media screen and (max-width: 7760px) {
+  html {
+    font-size: 77.6px !important;
+  }
+}
+@media screen and (max-width: 7560px) {
+  html {
+    font-size: 75.6px !important;
+  }
+}
+@media screen and (max-width: 7360px) {
+  html {
+    font-size: 73.6px !important;
+  }
+}
+@media screen and (max-width: 7160px) {
+  html {
+    font-size: 71.6px !important;
+  }
+}
+@media screen and (max-width: 6960px) {
+  html {
+    font-size: 69.6px !important;
+  }
+}
+@media screen and (max-width: 6760px) {
+  html {
+    font-size: 67.6px !important;
+  }
+}
+@media screen and (max-width: 6560px) {
+  html {
+    font-size: 65.6px !important;
+  }
+}
+@media screen and (max-width: 6360px) {
+  html {
+    font-size: 63.6px !important;
+  }
+}
+@media screen and (max-width: 6160px) {
+  html {
+    font-size: 61.6px !important;
+  }
+}
+@media screen and (max-width: 5960px) {
+  html {
+    font-size: 59.6px !important;
+  }
+}
+@media screen and (max-width: 5760px) {
+  html {
+    font-size: 57.6px !important;
+  }
+}
+@media screen and (max-width: 5560px) {
+  html {
+    font-size: 55.6px !important;
+  }
+}
+@media screen and (max-width: 5360px) {
+  html {
+    font-size: 53.6px !important;
+  }
+}
+@media screen and (max-width: 5160px) {
+  html {
+    font-size: 51.6px !important;
+  }
+}
+@media screen and (max-width: 4960px) {
+  html {
+    font-size: 49.6px !important;
+  }
+}
+@media screen and (max-width: 4760px) {
+  html {
+    font-size: 47.6px !important;
+  }
+}
+@media screen and (max-width: 4560px) {
+  html {
+    font-size: 45.6px !important;
+  }
+}
+@media screen and (max-width: 4360px) {
+  html {
+    font-size: 43.6px !important;
+  }
+}
+@media screen and (max-width: 4160px) {
+  html {
+    font-size: 41.6px !important;
+  }
+}
+@media screen and (max-width: 3960px) {
+  html {
+    font-size: 39.6px !important;
+  }
+}
+@media screen and (max-width: 3760px) {
+  html {
+    font-size: 37.6px !important;
+  }
+}
+@media screen and (max-width: 3560px) {
+  html {
+    font-size: 35.6px !important;
+  }
+}
+@media screen and (max-width: 3360px) {
+  html {
+    font-size: 33.6px !important;
+  }
+}
+@media screen and (max-width: 3160px) {
+  html {
+    font-size: 31.6px !important;
+  }
+}
+@media screen and (max-width: 2960px) {
+  html {
+    font-size: 29.6px !important;
+  }
+}
+@media screen and (max-width: 2760px) {
+  html {
+    font-size: 27.6px !important;
+  }
+}
+@media screen and (max-width: 2560px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+@media screen and (max-width: 2360px) {
+  html {
+    font-size: 23.6px !important;
+  }
+}
+@media screen and (max-width: 2160px) {
+  html {
+    font-size: 21.6px !important;
+  }
+}
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 19.2px !important;
+  }
+}
+@media screen and (max-width: 1728px) {
+  html {
+    font-size: 17.28px !important;
+  }
+}
+@media screen and (max-width: 1520px) {
+  html {
+    font-size: 15.2px !important;
+  }
+}
+@media screen and (max-width: 1420px) {
+  html {
+    font-size: 14.2px !important;
+  }
+}
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 13.66px !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 12.8px !important;
+  }
+}
+@media screen and (max-width: 1140px) {
+  html {
+    font-size: 11.4px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 10.24px !important;
+  }
+}
+@media screen and (max-width: 924px) {
+  html {
+    font-size: 9.24px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 8px !important;
+  }
+}
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 16px; /* 滚动条宽度 */
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 滚动条轨道颜色 */
+}
+::-webkit-scrollbar-thumb {
+  background: #eaeaea; /* 滚动条滑块颜色 */
+  border-radius: 6px; /* 滚动条滑块圆角 */
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #797979; /* 滚动条滑块悬停颜色 */
+}
+/* Firefox 滚动条样式 */
+body {
+   scrollbar-width: thin; /* 设置滚动条宽度为细 */
+   scrollbar-color: #eaeaea #f1f1f1; /* 滚动条滑块颜色和轨道颜色 */
+}
+.home_header {
+  width: 100%;
+  height: 18.9814814815rem;
+  padding: 0 4.6296296296rem 0 3.2407407407rem;
+  box-sizing: border-box;
+  background-image: url(../img/header-background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+.home_header .logo {
+  width: 17.3032407407rem;
+  height: 8.5648148148rem;
+  padding-top: 2.4305555556rem;
+}
+.home_header .logo img {
+  width: 100%;
+  height: 100%;
+}
+.home_header h1 {
+  flex: 1;
+  padding-top: 2.4305555556rem;
+  text-align: center;
+  font-size: 2.7777777778rem;
+  font-weight: 700;
+  color: #fff;
+}
+.home_header .actions_buttons {
+  margin-top: 4.1666666667rem;
+  display: flex;
+}
+.home_header .actions_buttons li {
+  margin-right: 2.8356481481rem;
+  width: 1.8518518519rem;
+  height: 1.8518518519rem;
+  cursor: pointer;
+}
+.home_header .actions_buttons li:last-child {
+  margin-right: 0;
+}
+.home_header .actions_buttons li:nth-child(2) {
+  width: 2.2569444444rem;
+}
+.home_header .actions_buttons li img {
+  width: 100%;
+  height: 100%;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+}
+.home .home_left {
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 15.0462962963rem;
+}
+.home .home_left ul {
+  padding-top: 6.5972222222rem;
+  margin-left: 3.4722222222rem;
+  display: flex;
+  flex-direction: column;
+}
+.home .home_left ul li {
+  margin-bottom: 0.7523148148rem;
+}
+.home .home_left ul li a {
+  color: #000;
+  font-size: 1.1574074074rem;
+  font-weight: 800;
+  transition: 0.3s;
+}
+.home .home_left ul li a:hover {
+  color: #fccf00;
+}
+.home .home_left ul li a:active {
+  color: #587558;
+}
+.home .home_left ul li:last-child {
+  margin-bottom: 0;
+}
+.home .home_center {
+  margin: 0 auto;
+  padding-bottom: 5.2083333333rem;
+  padding-top: 6.5972222222rem;
+  /* news显示区 */
+  /* 添加一点悬浮效果 */
+  /* 指示器样式设置 */
+}
+.home .home_center #news-photo {
+  position: relative;
+  width: 62.5rem;
+  height: 30.0925925926rem;
+  margin: 0 auto;
+  background-size: 100% 100%; /* 图片会完全填充容器，但保持其宽高比 */
+  background-repeat: no-repeat; /* 防止背景重复 */
+  background-position: center center; /* 图片居中显示 */
+  transition: background-image 0.5s ease-in-out; /* 添加过渡动画 */
+}
+.home .home_center #news-photo.slide-left {
+  animation: slideLeft 0.5s ease-in-out;
+}
+.home .home_center #news-photo.slide-right {
+  animation: slideRight 0.5s ease-in-out;
+}
+.home .home_center .right-button {
+  width: 2.4305555556rem;
+  height: 2.4305555556rem;
+  position: absolute;
+  right: -2.6041666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home .home_center .left-button {
+  width: 2.4305555556rem;
+  height: 2.4305555556rem;
+  position: absolute;
+  left: -2.6041666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home .home_center .left-button,
+.home .home_center .right-button {
+  cursor: pointer;
+  opacity: 0; /* 初始时不可见 */
+  transition: opacity 0.4s; /* 平滑过渡效果 */
+}
+.home .home_center .left-button:hover,
+.home .home_center .right-button:hover {
+  opacity: 0.8;
+  filter: brightness(0.5);
+  transition: 0.3s;
+}
+.home .home_center .left-button:hover,
+.home .home_center .right-button:active {
+  filter: brightness(0.7); /* 点击时的效果 */
+}
+.home .home_center .indicator-section {
+  transform: translateY(2.6041666667rem);
+  width: 10.9953703704rem;
+  height: 0.8680555556rem;
+  margin: 0 auto;
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+.home .home_center .photo-indicator {
+  width: 0.8680555556rem;
+  height: 0.8680555556rem;
+  border-radius: 50%;
+  background-color: #eaeaea;
+  margin: 0 0.5787037037rem; /* 间距 */
+  cursor: pointer; /* 鼠标悬停时显示手型指针 */
+  transition: background-color 0.3s; /* 平滑背景颜色变化 */
+  box-sizing: border-box; /* 确保边框和内边距不影响尺寸 */
+  /* 防止Flex布局改变尺寸 */
+  flex-shrink: 0; /* 防止缩小 */
+  flex-grow: 0; /* 防止放大 */
+}
+.home .home_center .photo-indicator:hover {
+  background-color: #fccf00; /* 鼠标悬停时的背景颜色 */
+}
+.home .home_center .photo-indicator.active {
+  background-color: #587558; /* 激活状态的背景颜色 */
+}
+.intro {
+  width: 86.2268518519rem;
+  padding-bottom: 6.6550925926rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+}
+.intro .intro_left,
+.intro .intro_right {
+  width: 41.3773148148rem;
+  height: 36.8055555556rem;
+  padding: 0 1.8518518519rem 2.4305555556rem;
+  background: #eaeaea;
+  display: flex;
+  flex-direction: column;
+}
+.intro .intro_left .title,
+.intro .intro_right .title {
+  height: 4.224537037rem;
+  display: flex;
+  align-items: center;
+}
+.intro .intro_left .title a,
+.intro .intro_right .title a {
+  font-size: 2.0833333333rem;
+  color: #000;
+  font-weight: 800;
+}
+.intro .intro_left .text-default,
+.intro .intro_right .text-default {
+  flex: 1;
+  overflow-y: auto; /* 添加垂直滚动 */
+  color: #000;
+  font-size: 1.3888888889rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.intro .intro_left .text-default .news-link a,
+.intro .intro_right .text-default .news-link a {
+  color: #000;
+  transition: 0.3s;
+}
+.intro .intro_left .text-default .news-link a:hover,
+.intro .intro_right .text-default .news-link a:hover {
+  color: #fccf00;
+}
+.intro .intro_left .text-default .news-link a:active,
+.intro .intro_right .text-default .news-link a:active {
+  color: #587558;
+}
+.intro .intro_left .text-default::-webkit-scrollbar,
+.intro .intro_right .text-default::-webkit-scrollbar {
+  display: none; /* 隐藏 Chrome 和 Safari 浏览器中的滚动条 */
+}
+.intro .intro_left {
+  margin-right: 3.4722222222rem;
+}
+
+/*# sourceMappingURL=index.css.map */

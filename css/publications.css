@@ -1,0 +1,368 @@
+@charset "UTF-8";
+body {
+  padding-top: px2Rem(70px);
+}
+
+/*媒体查询,不同屏幕下的根元素字体大小设置，利于rem*/
+@media screen and (max-width: 8360px) {
+  html {
+    font-size: 83.6px !important;
+  }
+}
+@media screen and (max-width: 8160px) {
+  html {
+    font-size: 81.6px !important;
+  }
+}
+@media screen and (max-width: 7960px) {
+  html {
+    font-size: 79.6px !important;
+  }
+}
+@media screen and (max-width: 7760px) {
+  html {
+    font-size: 77.6px !important;
+  }
+}
+@media screen and (max-width: 7560px) {
+  html {
+    font-size: 75.6px !important;
+  }
+}
+@media screen and (max-width: 7360px) {
+  html {
+    font-size: 73.6px !important;
+  }
+}
+@media screen and (max-width: 7160px) {
+  html {
+    font-size: 71.6px !important;
+  }
+}
+@media screen and (max-width: 6960px) {
+  html {
+    font-size: 69.6px !important;
+  }
+}
+@media screen and (max-width: 6760px) {
+  html {
+    font-size: 67.6px !important;
+  }
+}
+@media screen and (max-width: 6560px) {
+  html {
+    font-size: 65.6px !important;
+  }
+}
+@media screen and (max-width: 6360px) {
+  html {
+    font-size: 63.6px !important;
+  }
+}
+@media screen and (max-width: 6160px) {
+  html {
+    font-size: 61.6px !important;
+  }
+}
+@media screen and (max-width: 5960px) {
+  html {
+    font-size: 59.6px !important;
+  }
+}
+@media screen and (max-width: 5760px) {
+  html {
+    font-size: 57.6px !important;
+  }
+}
+@media screen and (max-width: 5560px) {
+  html {
+    font-size: 55.6px !important;
+  }
+}
+@media screen and (max-width: 5360px) {
+  html {
+    font-size: 53.6px !important;
+  }
+}
+@media screen and (max-width: 5160px) {
+  html {
+    font-size: 51.6px !important;
+  }
+}
+@media screen and (max-width: 4960px) {
+  html {
+    font-size: 49.6px !important;
+  }
+}
+@media screen and (max-width: 4760px) {
+  html {
+    font-size: 47.6px !important;
+  }
+}
+@media screen and (max-width: 4560px) {
+  html {
+    font-size: 45.6px !important;
+  }
+}
+@media screen and (max-width: 4360px) {
+  html {
+    font-size: 43.6px !important;
+  }
+}
+@media screen and (max-width: 4160px) {
+  html {
+    font-size: 41.6px !important;
+  }
+}
+@media screen and (max-width: 3960px) {
+  html {
+    font-size: 39.6px !important;
+  }
+}
+@media screen and (max-width: 3760px) {
+  html {
+    font-size: 37.6px !important;
+  }
+}
+@media screen and (max-width: 3560px) {
+  html {
+    font-size: 35.6px !important;
+  }
+}
+@media screen and (max-width: 3360px) {
+  html {
+    font-size: 33.6px !important;
+  }
+}
+@media screen and (max-width: 3160px) {
+  html {
+    font-size: 31.6px !important;
+  }
+}
+@media screen and (max-width: 2960px) {
+  html {
+    font-size: 29.6px !important;
+  }
+}
+@media screen and (max-width: 2760px) {
+  html {
+    font-size: 27.6px !important;
+  }
+}
+@media screen and (max-width: 2560px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+@media screen and (max-width: 2360px) {
+  html {
+    font-size: 23.6px !important;
+  }
+}
+@media screen and (max-width: 2160px) {
+  html {
+    font-size: 21.6px !important;
+  }
+}
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 19.2px !important;
+  }
+}
+@media screen and (max-width: 1728px) {
+  html {
+    font-size: 17.28px !important;
+  }
+}
+@media screen and (max-width: 1520px) {
+  html {
+    font-size: 15.2px !important;
+  }
+}
+@media screen and (max-width: 1420px) {
+  html {
+    font-size: 14.2px !important;
+  }
+}
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 13.66px !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 12.8px !important;
+  }
+}
+@media screen and (max-width: 1140px) {
+  html {
+    font-size: 11.4px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 10.24px !important;
+  }
+}
+@media screen and (max-width: 924px) {
+  html {
+    font-size: 9.24px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 8px !important;
+  }
+}
+@font-face {
+  font-family: Times_New_Roman;
+  src: url(../fonts/TimesNewRoman.ttf);
+}
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 16px; /* 滚动条宽度 */
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 滚动条轨道颜色 */
+}
+::-webkit-scrollbar-thumb {
+  background: #eaeaea; /* 滚动条滑块颜色 */
+  border-radius: 6px; /* 滚动条滑块圆角 */
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #797979; /* 滚动条滑块悬停颜色 */
+}
+/* Firefox 滚动条样式 */
+body {
+   scrollbar-width: thin; /* 设置滚动条宽度为细 */
+   scrollbar-color: #eaeaea #f1f1f1; /* 滚动条滑块颜色和轨道颜色 */
+}
+.publications {
+  display: flex;
+  justify-content: space-between;
+}
+.publications .publications_bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 4.0509259259rem;
+}
+.publications .publications_bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.publications .publications_left {
+  width: 20.2546296296rem;
+}
+.publications .publications_left ul {
+  margin-top: 4.4560185185rem;
+  margin-left: 2.5462962963rem;
+  display: flex;
+  flex-direction: column;
+}
+.publications .publications_left ul li {
+  margin-bottom: 0.7523148148rem;
+}
+.publications .publications_left ul li a {
+  color: #000;
+  font-size: 1.1574074074rem;
+  font-weight: 800;
+  transition: 0.3s;
+}
+.publications .publications_left ul li a:hover {
+  color: #fccf00;
+}
+.publications .publications_left ul li a:active {
+  color: #587558;
+}
+.publications .publications_left ul li:last-child {
+  margin-bottom: 0;
+}
+.publications .publications_center {
+  padding-bottom: 6.9444444444rem;
+  width: 61.9212962963rem;
+}
+.publications .publications_center h3 {
+  color: #000;
+  font-size: 1.3888888889rem;
+  font-weight: 600;
+  margin-top: 3.4722222222rem;
+}
+.publications .publications_center h3:nth-of-type(2) {
+  margin-top: 5.787037037rem;
+  margin-bottom: 1.4467592593rem;
+}
+.publications .publications_center h3:last-of-type {
+  margin-top: 7.2337962963rem;
+  margin-bottom: 1.4467592593rem;
+}
+.publications .publications_center .text {
+  width: 59.4907407407rem;
+  margin: 0.5787037037rem auto 1.7361111111rem;
+  display: flex;
+}
+.publications .publications_center .text p {
+  color: #000;
+  font-size: 0.8680555556rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.publications .publications_center .text p:first-child {
+  width: 2.3148148148rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.2893518519rem;
+  box-sizing: border-box;
+}
+.publications .publications_center .text p:last-child {
+  flex: 1;
+}
+.publications .publications_center .text p span {
+  color: #000;
+  font-family: Times_New_Roman;
+  font-size: 0.8680555556rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.publications .publications_center .text p .strong {
+  color: #000;
+  font-size: 0.8680555556rem;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+}
+.publications .publications_center .text p a {
+  transition: 0.3s;
+}
+.publications .publications_center .text p a:hover {
+  color: #fccf00;
+}
+.publications .publications_center .text p a:active {
+  color: #587558;
+}
+.publications .publications_center .text_next {
+  margin-top: 3.4722222222rem;
+}
+.publications .publications_center .text_list {
+  margin-top: 0rem;
+  margin-bottom: 0.8680555556rem;
+}
+.publications .publications_center .book {
+  width: 10.4166666667rem;
+  height: 15.0462962963rem;
+  margin: 0 auto;
+}
+.publications .publications_center .book img {
+  width: 100%;
+  height: 100%;
+}
+.publications .publications_right {
+  width: 17.650462963rem;
+}
+
+/*# sourceMappingURL=publications.css.map */

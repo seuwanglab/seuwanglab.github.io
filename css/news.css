@@ -1,0 +1,336 @@
+@charset "UTF-8";
+body {
+  padding-top: px2Rem(70px);
+}
+
+/*媒体查询,不同屏幕下的根元素字体大小设置，利于rem*/
+@media screen and (max-width: 8360px) {
+  html {
+    font-size: 83.6px !important;
+  }
+}
+@media screen and (max-width: 8160px) {
+  html {
+    font-size: 81.6px !important;
+  }
+}
+@media screen and (max-width: 7960px) {
+  html {
+    font-size: 79.6px !important;
+  }
+}
+@media screen and (max-width: 7760px) {
+  html {
+    font-size: 77.6px !important;
+  }
+}
+@media screen and (max-width: 7560px) {
+  html {
+    font-size: 75.6px !important;
+  }
+}
+@media screen and (max-width: 7360px) {
+  html {
+    font-size: 73.6px !important;
+  }
+}
+@media screen and (max-width: 7160px) {
+  html {
+    font-size: 71.6px !important;
+  }
+}
+@media screen and (max-width: 6960px) {
+  html {
+    font-size: 69.6px !important;
+  }
+}
+@media screen and (max-width: 6760px) {
+  html {
+    font-size: 67.6px !important;
+  }
+}
+@media screen and (max-width: 6560px) {
+  html {
+    font-size: 65.6px !important;
+  }
+}
+@media screen and (max-width: 6360px) {
+  html {
+    font-size: 63.6px !important;
+  }
+}
+@media screen and (max-width: 6160px) {
+  html {
+    font-size: 61.6px !important;
+  }
+}
+@media screen and (max-width: 5960px) {
+  html {
+    font-size: 59.6px !important;
+  }
+}
+@media screen and (max-width: 5760px) {
+  html {
+    font-size: 57.6px !important;
+  }
+}
+@media screen and (max-width: 5560px) {
+  html {
+    font-size: 55.6px !important;
+  }
+}
+@media screen and (max-width: 5360px) {
+  html {
+    font-size: 53.6px !important;
+  }
+}
+@media screen and (max-width: 5160px) {
+  html {
+    font-size: 51.6px !important;
+  }
+}
+@media screen and (max-width: 4960px) {
+  html {
+    font-size: 49.6px !important;
+  }
+}
+@media screen and (max-width: 4760px) {
+  html {
+    font-size: 47.6px !important;
+  }
+}
+@media screen and (max-width: 4560px) {
+  html {
+    font-size: 45.6px !important;
+  }
+}
+@media screen and (max-width: 4360px) {
+  html {
+    font-size: 43.6px !important;
+  }
+}
+@media screen and (max-width: 4160px) {
+  html {
+    font-size: 41.6px !important;
+  }
+}
+@media screen and (max-width: 3960px) {
+  html {
+    font-size: 39.6px !important;
+  }
+}
+@media screen and (max-width: 3760px) {
+  html {
+    font-size: 37.6px !important;
+  }
+}
+@media screen and (max-width: 3560px) {
+  html {
+    font-size: 35.6px !important;
+  }
+}
+@media screen and (max-width: 3360px) {
+  html {
+    font-size: 33.6px !important;
+  }
+}
+@media screen and (max-width: 3160px) {
+  html {
+    font-size: 31.6px !important;
+  }
+}
+@media screen and (max-width: 2960px) {
+  html {
+    font-size: 29.6px !important;
+  }
+}
+@media screen and (max-width: 2760px) {
+  html {
+    font-size: 27.6px !important;
+  }
+}
+@media screen and (max-width: 2560px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+@media screen and (max-width: 2360px) {
+  html {
+    font-size: 23.6px !important;
+  }
+}
+@media screen and (max-width: 2160px) {
+  html {
+    font-size: 21.6px !important;
+  }
+}
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 19.2px !important;
+  }
+}
+@media screen and (max-width: 1728px) {
+  html {
+    font-size: 17.28px !important;
+  }
+}
+@media screen and (max-width: 1520px) {
+  html {
+    font-size: 15.2px !important;
+  }
+}
+@media screen and (max-width: 1420px) {
+  html {
+    font-size: 14.2px !important;
+  }
+}
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 13.66px !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 12.8px !important;
+  }
+}
+@media screen and (max-width: 1140px) {
+  html {
+    font-size: 11.4px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 10.24px !important;
+  }
+}
+@media screen and (max-width: 924px) {
+  html {
+    font-size: 9.24px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 8px !important;
+  }
+}
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 16px; /* 滚动条宽度 */
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 滚动条轨道颜色 */
+}
+::-webkit-scrollbar-thumb {
+  background: #eaeaea; /* 滚动条滑块颜色 */
+  border-radius: 6px; /* 滚动条滑块圆角 */
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #797979; /* 滚动条滑块悬停颜色 */
+}
+/* Firefox 滚动条样式 */
+body {
+   scrollbar-width: thin; /* 设置滚动条宽度为细 */
+   scrollbar-color: #eaeaea #f1f1f1; /* 滚动条滑块颜色和轨道颜色 */
+}
+.news {
+  width: 100%;
+  display: flex;
+}
+.news .news_bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 4.0509259259rem;
+}
+.news .news_bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.news .news_left {
+  width: 14.4675925926rem;
+}
+.news .news_left ul {
+  margin-top: 4.4560185185rem;
+  margin-left: 2.5462962963rem;
+  display: flex;
+  flex-direction: column;
+}
+.news .news_left ul li {
+  margin-bottom: 0.7523148148rem;
+}
+.news .news_left ul li a {
+  color: #000;
+  font-size: 1.1574074074rem;
+  font-weight: 800;
+  transition: 0.3s;
+}
+.news .news_left ul li a:hover {
+  color: #fccf00;
+}
+.news .news_left ul li a:active {
+  color: #587558;
+}
+.news .news_left ul li:last-child {
+  margin-bottom: 0;
+}
+.news .news_center {
+  flex: 1;
+}
+.news .news_center ul {
+  width: 100%;
+}
+.news .news_center ul li {
+  margin-top: 3.4722222222rem;
+  width: 100%;
+  margin-bottom: 3.4722222222rem;
+  display: flex;
+}
+.news .news_center ul li .cover {
+  width: 34.7222222222rem;
+  height: 18.2291666667rem;
+}
+.news .news_center ul li .cover img {
+  width: 100%;
+  height: 100%;
+}
+.news .news_center ul li .info {
+  width: 39.3518518519rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 1.8518518519rem;
+}
+.news .news_center ul li .info h3 {
+  font-size: 1.8518518519rem;
+  font-weight: 800;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.news .news_center ul li .info p {
+  line-height: 1.3;
+  color: #000;
+  font-size: 1.8518518519rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.news .news_center ul li .info a {
+  transition: 0.3s;
+}
+.news .news_center ul li .info a:hover {
+  color: #fccf00;
+}
+.news .news_center ul li .info a:active {
+  color: #587558;
+}
+.news .news_right {
+  width: 8.6805555556rem;
+}
+
+/*# sourceMappingURL=news.css.map */

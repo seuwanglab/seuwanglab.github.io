@@ -1,0 +1,176 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+*[hidden] {
+    display: none;
+}
+
+body {
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+    min-width: 800px;
+    scrollbar-width: thin; /* 设置滚动条宽度为细 */
+    scrollbar-color: #eaeaea #f1f1f1; /* 滚动条滑块颜色和轨道颜色 */
+    /* 自定义滚动条样式 */
+    ::-webkit-scrollbar {
+        width: 16px; /* 滚动条宽度 */
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* 滚动条轨道颜色 */
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #eaeaea; /* 滚动条滑块颜色 */
+        border-radius: 6px; /* 滚动条滑块圆角 */
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #797979; /* 滚动条滑块悬停颜色 */
+    }
+    /* Firefox 滚动条样式 */
+    body {
+         scrollbar-width: thin; /* 设置滚动条宽度为细 */
+         scrollbar-color: #eaeaea #f1f1f1; /* 滚动条滑块颜色和轨道颜色 */
+    }
+}
+
+menu,
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+input {
+    outline: none;
+    padding: 0;
+}
+
+a:hover {
+    color: #333;
+}
+
+img{
+    display: block;
+}
+
+
