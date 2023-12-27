@@ -301,6 +301,9 @@ body {
   margin-top: 7.2337962963rem;
   margin-bottom: 1.4467592593rem;
 }
+.smaller-text {
+  font-size: 0.8rem;
+}
 .publications .publications_center .text {
   width: 59.4907407407rem;
   margin: 0.5787037037rem auto 1.7361111111rem;
