@@ -2,6 +2,7 @@
 
 .header {
   position: sticky;
+  z-index: 100;
   top: 0;
   width: 100%;
   height: px2Rem(70px);
@@ -56,7 +57,7 @@
 
 .footer {
   height: px2Rem(283px);
-  background: #eaeaea;
+  background-color: #ebeff1 !important;
   padding: 0 px2Rem(87px) 0 px2Rem(75px);
   box-sizing: border-box;
   display: flex;

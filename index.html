@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/format.css" />
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
   </head>
   <body>
     <header class="home_header">
@@ -37,85 +38,142 @@
         <ul>
           <li><a href="Team.html">Team</a></li>
           <li><a href="News.html">News</a></li>
-          <li><a href="Beauty.html">Research</a></li>
+          <li><a href="Research.html">Research</a></li>
           <li><a href="Publications.html">Publications</a></li>
           <li><a href="Beauty.html">Gallery</a></li>
         </ul>
       </div>
-      <div class="home_center">
-        <!-- 新闻展示区 -->
-        <div id="news-photo" class="news-img-section">
-          <!-- 图片将通过 JS 设置 -->
-          <img class="right-button" src="img/right-button.png" />
-          <img class="left-button" src="img/left-button.png" />
+      <div class="swiper_banner">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  src="img/news-111.jpg"
+                  alt=""
+                  style="transform: translateX(10px)"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"> <img src="img/news-11.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  src="img/news1.jpg"
+                  alt=""
+                  style="transform: translateX(10px)"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/news2.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img
+                  src="img/news3.jpg"
+                  alt=""
+                  style="transform: translateX(10px)"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/news4.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  src="img/news5.jpg"
+                  alt=""
+                  style="transform: translateX(10px)"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"> <img src="img/news6.jpg" alt="" /></a>
+            </div>
+          </div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next hide"></div>
+          <div class="swiper-button-prev hide"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- 指示器样式 -->
-        <div class="indicator-section photo-indicators"></div>
       </div>
     </div>
+    <!--    </div>-->
     <div class="intro">
       <div class="intro_left">
-        <div class="title"><a href="#">Introduction</a></div>
+        <div class="title"><a href="Research.html">About us</a></div>
         <div class="text-default">
           <p>
-            About the lab: The Intelligent Small-scale Robotics Lab (ISSRL)
-            (智能小尺度机器人实验室) is directed by Prof. Qianqian Wang
-            (Chinese: 王乾乾). Our lab studie small-scale robotics
-            (小尺度机器人学), microrobotic swarm (微机器人集群系统),dynamic
-            self-assembly and micromanipulation (磁驱动的动态自组装及微操作).
-            Our lab has been sponsored by various funding bodies, inlcuding the
-            National Natural Science Foundation of China
-            (国家自然科学基金委员会), Department of Science and Technology of
-            Jiangsu Province (江苏省科学技术厅) and Xiaomi (小米).
+            The <span>Intelligent Small-Scale Robotics Lab </span>(ISSR Lab) is
+            affiliated with School of Mechanical Engineering, Southeast
+            University (SEU), Nanjing, China. Founded by Dr. Qianqian Wang, the
+            lab is dedicated to the interdisciplinary robotics research at small
+            scales, ranging from fundamental science and physics to technologies
+            and solutions for a series of applications. The primary research
+            theme of ISSR Lab centered upon the development of intelligent
+            small-scale robotic systems, including actuation and control
+            strategies, autonomous systems, medical imaging-guided delivery
+            systems, and in <i>vitro/ex vivo/in vivo</i> trials. Our team aims
+            to investigate novel robotics solutions with a highly interest in
+            both academic research and down-to-earth solution development, and
+            we are always welcome worldwide collaborators to join our
+            collaboration network.
           </p>
           <p>
-            Keyords: Small-scale Robotics (小尺度机器人学), Microrobotic swarm
-            (微机器人集群系统),Dynamic Self-assembly and Micromanipulation
-            (磁驱动的动态自组装及微操作), Magnetic control medical devices
-            (磁控医疗设备), Flexible Multi-modal micro-miniature Robot and
-            Micro-nano medical device(柔性多模态微小型机器人及微纳医疗器械).
+            <span>Research Keywords: </span>Small-scale robotics,
+            micro/nanorobotics, magnetic control, micro/nanomanipulation,
+            microrobotic swarm, collective behaviors, active targeted delivery,
+            autonomous system, medical imaging.
           </p>
         </div>
       </div>
-
       <div class="intro_right">
         <div class="title"><a href="News.html">News</a></div>
         <div class="text-default">
-
-           <span class="news-text">
-             [2023. 12] 王老师在东南大学2023年第二期新教师入职培训典礼做题为“以青春之名 赴时代之约”的发言。
+          <span class="news-text">
+            [2023. 12]王老师在东南大学2023年第二期新教师入职培训典礼做题为“以青春之名赴时代之约”的发言。
           </span>
           <span class="news-link">
-            <a href="https://mp.weixin.qq.com/s/-R1iJiCGdLqEcNVBrxD0QA"
-              target="_blank">[Link]</a>
+            <a href="https://mp.weixin.qq.com/s/-R1iJiCGdLqEcNVBrxD0QA" target="_blank">[东南教师]</a>
           </span>
 
+          <span class="news-link"
+            ><a
+              href="https://mp.weixin.qq.com/s/-R1iJiCGdLqEcNVBrxD0QA"
+              target="_blank"
+              >[东南大学人事处]</a
+            ></span
+          >
           <span class="news-text"
-            ><br /><br />[2023. 12] Professor Wang Qianqian
-            <span class="lo"
-              >was selected as a Young Editorial Board Member of the Journal of
-            </span>
-            Mechanical Engineering!
+            ><br /><br />[2023. 12] Professor Wang Qianqian was selected as a
+            Young Editorial Board Member of the Journal of Mechanical
+            Engineering!
           </span>
-          <span class="news-link">
-            <a href="https://mp.weixin.qq.com/s/WJWPgRgJ_ueYFMUTQPPhEw"
-              target="_blank">[Link]</a>
-          </span>
-
-
+          <span class="news-link"
+            ><a
+              href="https://mp.weixin.qq.com/s/WJWPgRgJ_ueYFMUTQPPhEw"
+              target="_blank"
+              >[Link]</a
+            ></span
+          >
           <span class="news-text"
             ><br /><br />[2023. 12] Our book entitled
             <span class="lo"
               >Collective Behavior of Magnetic Micro/Nanorobots: Control,
-              Imaging, and Applications
-            </span>
+              Imaging, and Applications</span
+            >
             is online!
           </span>
-          <span class="news-link">
-            <a href="https://www.taylorfrancis.com/books/mono/10.1201/9781032665788/collective-behavior-magnetic-micro-nanorobots-qianqian-wang-jiangfan-yu"
-              target="_blank">[Link]</a>
-          </span>
-
+          
+                   <span class="news-link"
+                      ><a
+                       href="https://www.taylorfrancis.com/books/mono/10.1201/9781032665788/collective-behavior-magnetic-micro-nanorobots-qianqian-wang-jiangfan-yu"
+                       target="_blank"
+                        >[Link]</a
+                     ></span
+                    >
           <span class="news-text"
             ><br /><br />[2023. 11] Our paper entitled
             <span class="lo"
@@ -124,25 +182,26 @@
             >
             has been published in Nano-Micro Letters.</span
           >
-          <span class="news-link"
-            ><a
-              href="https://link.springer.com/article/10.1007/s40820-023-01261-9?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20231130&utm_content=10.1007/s40820-023-01261-9"
-              target="_blank"
-              >[Link]</a
-            ></span
-          >
+                    <span class="news-link"
+                      ><a
+                        href="https://link.springer.com/article/10.1007/s40820-023-01261-9?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20231130&utm_content=10.1007/s40820-023-01261-9"
+                        target="_blank"
+                        >[Link]</a
+                      ></span
+                    >
           <span class="news-text"
             ><br /><br />[2023. 11] Dr. Wang won the "Open Science Excellent
             Author Program" due to the high impact of our Advanced Intelligent
             Systems article
+            <span class="news-link"
+              ><a
+                href="https://onlinelibrary.wiley.com/doi/10.1002/aisy.202300108"
+                target="_blank"
+                >[Link]</a
+              ></span
+            >
           </span>
-          <span class="news-link"
-            ><a
-              href="https://onlinelibrary.wiley.com/doi/10.1002/aisy.202300108"
-              target="_blank"
-              >[Link]</a
-            ></span
-          >
+
           <span class="news-text"
             >, which received more than 6,000 downloads in 3 months from
             worldwide researchers.<br /><br />
@@ -153,7 +212,7 @@
             ><a
               href="https://news.seu.edu.cn/2023/0908/c5486a463987/page.htm"
               target="_blank"
-              >[Link]</a
+              >[东南大学新闻网]</a
             ></span
           >
           <span class="news-text"
@@ -200,24 +259,22 @@
           >
           <span class="news-text"
             ><br /><br />[2022. 11] Dr. Wang won the 1st Xiaomi Young Talents
-            Program（首届“小米青年学者”）[</span
+            Program（首届“小米青年学者”）.</span
           >
           <span class="news-link"
             ><a
               href="https://mp.weixin.qq.com/s/ffFc8hxB74ggCxY_F0ms3w"
               target="_blank"
-              >小米公益基金会</a
+              >[小米公益基金会]</a
             ></span
           >
-          <span class="news-text">][</span>
           <span class="news-link"
             ><a
               href="https://mp.weixin.qq.com/s/saWBJu5uC1peF6I-or7-_g"
               target="_blank"
-              >东南大学教育基金会</a
+              >[东南大学教育基金会]</a
             ></span
           >
-          <span class="news-text">].</span>
         </div>
       </div>
     </div>
@@ -229,7 +286,7 @@
         <ul>
           <li><a href="Team.html">Team</a></li>
           <li><a href="News.html">News</a></li>
-          <li><a href="Beauty.html">Research</a></li>
+          <li><a href="Research.html">Research</a></li>
           <li><a href="Publications.html">Publications</a></li>
           <li><a href="Beauty.html">Gallery</a></li>
         </ul>
@@ -273,11 +330,12 @@
         <li><a href="News.html">News</a></li>
         <li><a href="Research.html">Research</a></li>
         <li><a href="Publications.html">Publications</a></li>
-        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Beauty.html">Gallery</a></li>
       </ul>
     </div>
   </body>
   <script src="js/jquery.min.js"></script>
   <script src="js/mudi.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/index.js"></script>
 </html>

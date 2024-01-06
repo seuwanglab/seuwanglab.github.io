@@ -218,25 +218,6 @@ body {
   font-family: Times_New_Roman;
   src: url(../fonts/TimesNewRoman.ttf);
 }
-/* 自定义滚动条样式 */
-::-webkit-scrollbar {
-  width: 16px; /* 滚动条宽度 */
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1; /* 滚动条轨道颜色 */
-}
-::-webkit-scrollbar-thumb {
-  background: #eaeaea; /* 滚动条滑块颜色 */
-  border-radius: 6px; /* 滚动条滑块圆角 */
-}
-::-webkit-scrollbar-thumb:hover {
-   background: #797979; /* 滚动条滑块悬停颜色 */
-}
-/* Firefox 滚动条样式 */
-body {
-   scrollbar-width: thin; /* 设置滚动条宽度为细 */
-   scrollbar-color: #eaeaea #f1f1f1; /* 滚动条滑块颜色和轨道颜色 */
-}
 .publications {
   display: flex;
   justify-content: space-between;
@@ -293,6 +274,9 @@ body {
   font-weight: 600;
   margin-top: 3.4722222222rem;
 }
+.smaller-text {
+  font-size: 0.8rem;
+}
 .publications .publications_center h3:nth-of-type(2) {
   margin-top: 5.787037037rem;
   margin-bottom: 1.4467592593rem;
@@ -301,10 +285,8 @@ body {
   margin-top: 7.2337962963rem;
   margin-bottom: 1.4467592593rem;
 }
-.smaller-text {
-  font-size: 0.8rem;
-}
 .publications .publications_center .text {
+  text-align: justify;
   width: 59.4907407407rem;
   margin: 0.5787037037rem auto 1.7361111111rem;
   display: flex;
@@ -326,6 +308,7 @@ body {
   flex: 1;
 }
 .publications .publications_center .text p span {
+  text-align: justify;
   color: #000;
   font-family: Times_New_Roman;
   font-size: 0.8680555556rem;
@@ -333,6 +316,7 @@ body {
   font-weight: 400;
 }
 .publications .publications_center .text p .strong {
+  text-align: justify;
   color: #000;
   font-size: 0.8680555556rem;
   font-weight: 700;
@@ -352,6 +336,7 @@ body {
   margin-top: 3.4722222222rem;
 }
 .publications .publications_center .text_list {
+  text-align: justify;
   margin-top: 0rem;
   margin-bottom: 0.8680555556rem;
 }

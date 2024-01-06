@@ -4,23 +4,5 @@
 .buiding img {
   width: 100%;
 }
-/* 自定义滚动条样式 */
-::-webkit-scrollbar {
-  width: 16px; /* 滚动条宽度 */
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1; /* 滚动条轨道颜色 */
-}
-::-webkit-scrollbar-thumb {
-  background: #eaeaea; /* 滚动条滑块颜色 */
-  border-radius: 6px; /* 滚动条滑块圆角 */
-}
-::-webkit-scrollbar-thumb:hover {
-   background: #797979; /* 滚动条滑块悬停颜色 */
-}
-/* Firefox 滚动条样式 */
-body {
-   scrollbar-width: thin; /* 设置滚动条宽度为细 */
-   scrollbar-color: #eaeaea #f1f1f1; /* 滚动条滑块颜色和轨道颜色 */
-}
+
 /*# sourceMappingURL=buiding.css.map */

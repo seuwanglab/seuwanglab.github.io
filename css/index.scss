@@ -1,15 +1,11 @@
 @import "media";
-//@font-face {
-//  font-family: Times_New_Roman;
-//  src: url(../fonts/TimesNewRoman.ttf);
-//}
 
 .home_header {
   width: 100%;
-  height: px2Rem(328px);
+  height: px2Rem(203px);
   padding: 0 px2Rem(80px) 0 px2Rem(56px);
   box-sizing: border-box;
-  background-image: url(../img/header-background.png);
+  background-image: url(../img/header-background.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -17,7 +13,7 @@
   .logo {
     width: px2Rem(299px);
     height: px2Rem(148px);
-    padding-top: px2Rem(42px);
+    padding-top: px2Rem(15px);
     img {
       width: 100%;
       height: 100%;
@@ -25,15 +21,15 @@
   }
   h1 {
     flex: 1;
-    padding-top: px2Rem(42px);
+    line-height: px2Rem(203px);
     text-align: center;
     font-size: px2Rem(48px);
     font-weight: 700;
     color: #fff;
   }
   .actions_buttons {
-    margin-top: px2Rem(72px);
     display: flex;
+    align-items: center;
     li {
       margin-right: px2Rem(49px);
       width: px2Rem(32px);
@@ -53,6 +49,10 @@
   }
 }
 
+.hide {
+  opacity: 0;
+}
+
 .home {
   position: relative;
   width: 100%;
@@ -62,7 +62,6 @@
     left: 0;
     width: px2Rem(260px);
     ul {
-      padding-top: px2Rem(114px);
       margin-left: px2Rem(60px);
       display: flex;
       flex-direction: column;
@@ -88,118 +87,99 @@
       }
     }
   }
-  .home_center {
-    margin: 0 auto;
-    padding-bottom: px2Rem(90px);
-    padding-top: px2Rem(114px);
-
-    /* news显示区 */
-    #news-photo {
-      position: relative;
-      width: px2Rem(1080px);
-      height: px2Rem(520px);
-      //width: px2Rem(1200px);
-      //height: px2Rem(590px);
-      margin: 0 auto;
-      background-size: 100% 100%; /* 图片会完全填充容器，但保持其宽高比 */
-      background-repeat: no-repeat; /* 防止背景重复 */
-      background-position: center center; /* 图片居中显示 */
-      transition: background-image 0.5s ease-in-out; /* 添加过渡动画 */
-    }
-    #news-photo.slide-left {
-      animation: slideLeft 0.5s ease-in-out;
-    }
-    #news-photo.slide-right {
-      animation: slideRight 0.5s ease-in-out;
-    }
-    .right-button {
-      width: px2Rem(42px);
-      height: px2Rem(42px);
-      position: absolute;
-      right: px2Rem(-45px);
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .left-button {
-      width: px2Rem(42px);
-      height: px2Rem(42px);
-      position: absolute;
-      left: px2Rem(-45px);
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .left-button,
-    .right-button {
-      cursor: pointer;
-      opacity: 0; /* 初始时不可见 */
-      transition: opacity 0.4s; /* 平滑过渡效果 */
-    }
-    /* 添加一点悬浮效果 */
-    .left-button:hover,
-    .right-button:hover {
-      opacity: 0.8;
-      filter: brightness(0.5);
-      transition: 0.3s;
-    }
-    .left-button:hover,
-    .right-button:active {
-      filter: brightness(0.7); /* 点击时的效果 */
-    }
-    /* 指示器样式设置 */
-    .indicator-section {
-      transform: translateY(px2Rem(45px));
-      width: px2Rem(190px);
-      height: px2Rem(15px);
-
-      margin: 0 auto;
-      display: flex; /* 使用flex布局 */
-      justify-content: center; /* 水平居中 */
-      align-items: center; /* 垂直居中 */
-    }
-    .photo-indicator {
-      width: px2Rem(15px);
-      height: px2Rem(15px);
-      border-radius: 50%;
-      background-color: #eaeaea;
-      margin: 0 px2Rem(10px); /* 间距 */
-      cursor: pointer; /* 鼠标悬停时显示手型指针 */
-      transition: background-color 0.3s; /* 平滑背景颜色变化 */
-      box-sizing: border-box; /* 确保边框和内边距不影响尺寸 */
-      /* 防止Flex布局改变尺寸 */
-      flex-shrink: 0; /* 防止缩小 */
-      flex-grow: 0; /* 防止放大 */
-    }
-    .photo-indicator:hover {
-      background-color: #fccf00; /* 鼠标悬停时的背景颜色 */
-    }
-    .photo-indicator.active {
-      background-color: #587558; /* 激活状态的背景颜色 */
-    }
-  }
   .home_right {
+  }
+  .swiper_banner {
+    position: relative;
+    width: px2Rem(1185px);
+    margin: px2Rem(95px) auto 0;
+    .swiper-container {
+      border-radius:px2Rem(9px) ;
+      padding-bottom: px2Rem(60px);
+    }
+    a {
+      display: block;
+      height: px2Rem(290px);
+      border-radius: 9px;
+      img {
+        border-radius: 9px;
+        display: block;
+        height: px2Rem(285px);
+        width: calc(100% - px2Rem(10px));
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .swiper-button-prev {
+      left: px2Rem(20px);
+      transition: all 0.3s;
+      transform: translateY(px2Rem(-32.5px));
+      &::after {
+        color: #8a8a8a;
+        font-size: px2Rem(30px);
+      }
+    }
+    .swiper-button-next {
+      right: px2Rem(20px);
+      transition: all 0.3s;
+      transform: translateY(px2Rem(-32.5px));
+      &::after {
+        color: #8a8a8a;
+        font-size: px2Rem(30px);
+      }
+    }
+    .swiper-pagination {
+      width: 100%;
+      height: px2Rem(65px);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-pagination-bullet {
+      width: px2Rem(12px);
+      height: px2Rem(12px);
+      background-color: #587558;
+      margin-right: px2Rem(12px);
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        color: #fccf00;
+      }
+
+      &:active {
+        color: #587558;
+      }
+    }
   }
 }
 
 .intro {
-  width: px2Rem(1490px);
   padding-bottom: px2Rem(115px);
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   .intro_left,
   .intro_right {
-    width: px2Rem(715px);
-    height: px2Rem(636px);
-    padding: 0 px2Rem(32px) px2Rem(42px);
-    background: #eaeaea;
+    font-size: px2Rem(18px);
+    width: px2Rem(1185px);
+    padding: 0 px2Rem(20px) px2Rem(20px) px2Rem(20px);
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #f7f7f7;
     display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     flex-direction: column;
     .title {
-      height: px2Rem(73px);
+      font-style: italic;
+      height: px2Rem(70px);
       display: flex;
       align-items: center;
       a {
-        font-size: px2Rem(36px);
+        font-size: px2Rem(28px);
         color: #000;
         font-weight: 800;
       }
@@ -208,9 +188,19 @@
       flex: 1;
       overflow-y: auto; /* 添加垂直滚动 */
       color: #000;
-      font-size: px2Rem(24px);
-      font-weight: 500;
+      font-size: px2Rem(18px);
+      font-weight: 400;
       line-height: 1.3;
+      text-align: justify;
+      p {
+        > span {
+          font-size: px2Rem(18px);
+          font-weight: 700;
+        }
+        > i {
+          font-style: italic;
+        }
+      }
       .news-link {
         a {
           color: #000;
@@ -229,10 +219,15 @@
     }
   }
   .intro_left {
-    margin-right: px2Rem(60px);
+    height: px2Rem(300px);
+    margin-bottom: px2Rem(35px);
+    p {
+      > span {
+        font-weight: 700;
+      }
+    }
+  }
+  .intro_right {
+    height: px2Rem(395px);
   }
 }
-//.lo {
-//  font-style: italic;
-//  font-family: Times_New_Roman;
-//}
