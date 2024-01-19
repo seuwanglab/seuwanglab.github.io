@@ -75,7 +75,7 @@
       display: flex;
       p {
         &:first-child {
-          width: px2Rem(40px);
+          width: px2Rem(25px);
           display: flex;
           justify-content: flex-end;
           padding-right: px2Rem(5px);
@@ -133,5 +133,13 @@
   }
   .publications_right {
     width: px2Rem(305px);
+  }
+  .Papers{
+    p{
+      &:first-child{
+width: px2Rem(18px) !important; ;
+      }
+    }
+
   }
 }

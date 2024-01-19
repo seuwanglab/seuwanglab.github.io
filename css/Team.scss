@@ -1,5 +1,11 @@
 @import "media";
 
+
+@font-face {
+  font-family: Times_New_Roman;
+  src: url(../fonts/TimesNewRoman.ttf);
+}
+
 .team {
   width: 100%;
   display: flex;
@@ -22,12 +28,14 @@
   }
   .team_wrap {
     width: 100%;
-    display: flex;
+    position: relative;
     .team_left {
-      width: px2Rem(305px);
+      //width: px2Rem(305px);
+      position: absolute;
+      top: px2Rem(140px);
+      left: px2Rem(44px);
       ul {
-        margin-top: px2Rem(77px);
-        margin-left: px2Rem(44px);
+
         display: flex;
         flex-direction: column;
         li {
@@ -52,8 +60,10 @@
       }
     }
     .team_center {
-      padding-top: px2Rem(100px);
-      flex: 1;
+      padding-top: px2Rem(140px);
+     width: px2Rem(1039px);
+     transform: translateX(65px);
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       .team_center_top {
@@ -61,29 +71,38 @@
         width: 100%;
         justify-content: space-between;
         .avg {
-          width: px2Rem(190px);
-          height: px2Rem(260px);
+          width: px2Rem(147px);
+          height: px2Rem(199px);
           img {
             width: 100%;
             height: 100%;
           }
         }
         .text {
-          width: px2Rem(968px);
+          transform: translateY(-5px);
+          width: px2Rem(886px);
           display: flex;
           padding-left: px2Rem(10px);
           flex-direction: column;
           h3 {
-            line-height: 1.2;
+
             color: #000;
-            font-size: px2Rem(40px);
+            font-size: px2Rem(36px);
             font-weight: 700;
           }
           h4 {
-            line-height: 1.2;
-            color: #000;
-            font-size: px2Rem(30px);
+            line-height: 1.3;
+           color: #8E8D8B;
+            font-size: px2Rem(22px);
             font-weight: 600;
+            sup{
+
+              font-size: px2Rem(13px);
+            }
+            transform: translateY(4px);
+            &:first-of-type{
+
+            }
           }
           h5 {
             line-height: 1.2;
@@ -100,162 +119,161 @@
         }
       }
       .team_center_bottom {
+        transform: translateY(-5px);
+        text-align: justify;
         color: #000;
-        font-size: px2Rem(23px);
-        font-weight: 500;
-        line-height: 1.25;
+        font-size: px2Rem(18px);
+        font-weight: 600;
+        line-height: 1.25;letter-spacing: 0.18px;
+        i{font-style: italic;  font-family: Times_New_Roman;}
       }
     }
     .team_right {
-      width: px2Rem(250px);
+      //flex: 1;
+      //width: px2Rem(250px);
     }
   }
   .team_ph {
-    padding: px2Rem(45px) px2Rem(50px) 0 px2Rem(70px);
+    transform: translateX(65px);
+    width: px2Rem(1039px);
+    padding: px2Rem(50px) 0 px2Rem(0px);
+    margin: 0 auto;
     h2 {
       display: flex;
       align-items: center;
       color: #000;
-      font-size: px2Rem(47px);
+      font-size: px2Rem(32px);
       font-weight: 600;
-      margin-bottom: px2Rem(70px);
+      margin-bottom: px2Rem(40px);
       .xian {
-        margin-right: px2Rem(16px);
+        margin-right: px2Rem(6px);
         width: px2Rem(8px);
-        height: px2Rem(34px);
+        height: px2Rem(25px);
         background-color: #587559;
       }
     }
     ul {
       display: flex;
+      width: 100%;
+      justify-content: space-between;
       li {
-        &:first-child,
-        &:nth-child(2) {
-          display: flex;
-          flex-direction: column;
-          width: px2Rem(464px);
-          margin-right: px2Rem(50px);
-          .avg {
-            width: px2Rem(195px);
-            height: px2Rem(260px);
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-          h3 {
-            color: #000;
-            font-size: px2Rem(40px);
-            font-weight: 600;
-            margin: px2Rem(10px) 0;
-          }
-          p {
-            color: #000;
-            font-size: px2Rem(23px);
-            font-weight: 500;
-            line-height: 1.25;
+        display: flex;
+        flex-direction: column;
+        width: px2Rem(301px);
+        //margin-right: px2Rem(50px);
+        //&:last-child{
+        //  margin-right: 0;
+        //}
+        .avg {
+          width: px2Rem(147px);
+          height: px2Rem(199px);
+          img {
+            width: 100%;
+            height: 100%;
           }
         }
-        &:last-child {
-          padding-bottom: px2Rem(70px);
-          display: flex;
-          align-items: flex-end;
-          flex: 1;
+        h3 {
           color: #000;
-          font-size: px2Rem(34px);
-          font-weight: 800;
+          font-size: px2Rem(27px);
+          font-weight: 600;
+          margin: px2Rem(10px) 0;
+        }
+        p {
+          width: 100%;
+          color: #000;
+          font-size: px2Rem(16px);
+          font-weight: 500;
           line-height: 1.25;
+          text-align: justify;
         }
       }
     }
   }
   .team_student {
-    padding: px2Rem(60px) px2Rem(50px) 0 px2Rem(70px);
+    transform: translateX(65px);
+    width: px2Rem(1039px);
+    padding: px2Rem(50px) 0 px2Rem(40px);
+    margin: 0 auto;
     h2 {
       display: flex;
       align-items: center;
       color: #000;
-      font-size: px2Rem(47px);
+      font-size: px2Rem(32px);
       font-weight: 600;
-      margin-bottom: px2Rem(70px);
+      margin-bottom: px2Rem(40px);
       .xian {
-        margin-right: px2Rem(16px);
+        margin-right: px2Rem(6px);
         width: px2Rem(8px);
-        height: px2Rem(34px);
+        height: px2Rem(25px);
         background-color: #587559;
       }
     }
     .team_student_first {
       display: flex;
-      margin-bottom: px2Rem(35px);
+      justify-content: space-between;
       li {
         display: flex;
         flex-direction: column;
-        width: px2Rem(477px);
-        margin-right: px2Rem(50px);
+        width: px2Rem(301px);
         .avg {
-          width: 100%;
+          width: px2Rem(147px);
+          height: px2Rem(199px);
           display: flex;
           justify-content: flex-end;
 
           img {
-            width: px2Rem(195px);
-            height: px2Rem(260px);
+            width: 100%;
+            height: 100%;
+
           }
         }
         h3 {
           color: #000;
-          font-size: px2Rem(40px);
+          font-size: px2Rem(27px);
           font-weight: 600;
           margin: px2Rem(10px) 0;
         }
         p {
+          width: 100%;
           color: #000;
-          font-size: px2Rem(23px);
+          font-size: px2Rem(16px);
           font-weight: 500;
           line-height: 1.25;
+          text-align: justify;
         }
       }
     }
     .team_student_last {
       display: flex;
+      margin-top: px2Rem(40px);justify-content: space-between;
       li {
-        &:first-child,
-        &:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        width: px2Rem(301px);
+        .avg {
+          width: px2Rem(147px);
+          height: px2Rem(199px);
           display: flex;
-          flex-direction: column;
-          width: px2Rem(464px);
-          margin-right: px2Rem(50px);
-          .avg {
-            width: px2Rem(195px);
-            height: px2Rem(260px);
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-          h3 {
-            color: #000;
-            font-size: px2Rem(40px);
-            font-weight: 600;
-            margin: px2Rem(10px) 0;
-          }
-          p {
-            color: #000;
-            font-size: px2Rem(23px);
-            font-weight: 500;
-            line-height: 1.25;
+          justify-content: flex-end;
+
+          img {
+            width: 100%;
+            height: 100%;
+
           }
         }
-        &:last-child {
-          padding-bottom: px2Rem(70px);
-          display: flex;
-          align-items: flex-end;
-          flex: 1;
+        h3 {
           color: #000;
-          font-size: px2Rem(34px);
-          font-weight: 800;
+          font-size: px2Rem(27px);
+          font-weight: 600;
+          margin: px2Rem(10px) 0;
+        }
+        p {
+          color: #000;
+          font-size: px2Rem(16px);
+          font-weight: 500;
           line-height: 1.25;
+          text-align: justify;
         }
       }
     }

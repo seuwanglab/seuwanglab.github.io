@@ -214,6 +214,10 @@ body {
     font-size: 8px !important;
   }
 }
+@font-face {
+  font-family: Times_New_Roman;
+  src: url(../fonts/TimesNewRoman.ttf);
+}
 .team {
   width: 100%;
   display: flex;
@@ -237,14 +241,14 @@ body {
 }
 .team .team_wrap {
   width: 100%;
-  display: flex;
+  position: relative;
 }
 .team .team_wrap .team_left {
-  width: 17.650462963rem;
+  position: absolute;
+  top: 8.1018518519rem;
+  left: 2.5462962963rem;
 }
 .team .team_wrap .team_left ul {
-  margin-top: 4.4560185185rem;
-  margin-left: 2.5462962963rem;
   display: flex;
   flex-direction: column;
 }
@@ -267,8 +271,10 @@ body {
   margin-bottom: 0;
 }
 .team .team_wrap .team_center {
-  padding-top: 5.787037037rem;
-  flex: 1;
+  padding-top: 8.1018518519rem;
+  width: 60.1273148148rem;
+  transform: translateX(65px);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -278,30 +284,34 @@ body {
   justify-content: space-between;
 }
 .team .team_wrap .team_center .team_center_top .avg {
-  width: 10.9953703704rem;
-  height: 15.0462962963rem;
+  width: 8.5069444444rem;
+  height: 11.5162037037rem;
 }
 .team .team_wrap .team_center .team_center_top .avg img {
   width: 100%;
   height: 100%;
 }
 .team .team_wrap .team_center .team_center_top .text {
-  width: 56.0185185185rem;
+  transform: translateY(-5px);
+  width: 51.2731481481rem;
   display: flex;
   padding-left: 0.5787037037rem;
   flex-direction: column;
 }
 .team .team_wrap .team_center .team_center_top .text h3 {
-  line-height: 1.2;
   color: #000;
-  font-size: 2.3148148148rem;
+  font-size: 2.0833333333rem;
   font-weight: 700;
 }
 .team .team_wrap .team_center .team_center_top .text h4 {
-  line-height: 1.2;
-  color: #000;
-  font-size: 1.7361111111rem;
+  line-height: 1.3;
+  color: #8E8D8B;
+  font-size: 1.2731481481rem;
   font-weight: 600;
+  transform: translateY(4px);
+}
+.team .team_wrap .team_center .team_center_top .text h4 sup {
+  font-size: 0.7523148148rem;
 }
 .team .team_wrap .team_center .team_center_top .text h5 {
   line-height: 1.2;
@@ -316,156 +326,155 @@ body {
   font-weight: 500;
 }
 .team .team_wrap .team_center .team_center_bottom {
+  transform: translateY(-5px);
+  text-align: justify;
   color: #000;
-  font-size: 1.3310185185rem;
-  font-weight: 500;
+  font-size: 1.0416666667rem;
+  font-weight: 600;
   line-height: 1.25;
+  letter-spacing: 0.18px;
 }
-.team .team_wrap .team_right {
-  width: 14.4675925926rem;
+.team .team_wrap .team_center .team_center_bottom i {
+  font-style: italic;
+  font-family: Times_New_Roman;
 }
 .team .team_ph {
-  padding: 2.6041666667rem 2.8935185185rem 0 4.0509259259rem;
+  transform: translateX(65px);
+  width: 60.1273148148rem;
+  padding: 2.8935185185rem 0 0rem;
+  margin: 0 auto;
 }
 .team .team_ph h2 {
   display: flex;
   align-items: center;
   color: #000;
-  font-size: 2.7199074074rem;
+  font-size: 1.8518518519rem;
   font-weight: 600;
-  margin-bottom: 4.0509259259rem;
+  margin-bottom: 2.3148148148rem;
 }
 .team .team_ph h2 .xian {
-  margin-right: 0.9259259259rem;
+  margin-right: 0.3472222222rem;
   width: 0.462962963rem;
-  height: 1.9675925926rem;
+  height: 1.4467592593rem;
   background-color: #587559;
 }
 .team .team_ph ul {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
-.team .team_ph ul li:first-child, .team .team_ph ul li:nth-child(2) {
+.team .team_ph ul li {
   display: flex;
   flex-direction: column;
-  width: 26.8518518519rem;
-  margin-right: 2.8935185185rem;
+  width: 17.4189814815rem;
 }
-.team .team_ph ul li:first-child .avg, .team .team_ph ul li:nth-child(2) .avg {
-  width: 11.2847222222rem;
-  height: 15.0462962963rem;
+.team .team_ph ul li .avg {
+  width: 8.5069444444rem;
+  height: 11.5162037037rem;
 }
-.team .team_ph ul li:first-child .avg img, .team .team_ph ul li:nth-child(2) .avg img {
+.team .team_ph ul li .avg img {
   width: 100%;
   height: 100%;
 }
-.team .team_ph ul li:first-child h3, .team .team_ph ul li:nth-child(2) h3 {
+.team .team_ph ul li h3 {
   color: #000;
-  font-size: 2.3148148148rem;
+  font-size: 1.5625rem;
   font-weight: 600;
   margin: 0.5787037037rem 0;
 }
-.team .team_ph ul li:first-child p, .team .team_ph ul li:nth-child(2) p {
+.team .team_ph ul li p {
+  width: 100%;
   color: #000;
-  font-size: 1.3310185185rem;
+  font-size: 0.9259259259rem;
   font-weight: 500;
   line-height: 1.25;
-}
-.team .team_ph ul li:last-child {
-  padding-bottom: 4.0509259259rem;
-  display: flex;
-  align-items: flex-end;
-  flex: 1;
-  color: #000;
-  font-size: 1.9675925926rem;
-  font-weight: 800;
-  line-height: 1.25;
+  text-align: justify;
 }
 .team .team_student {
-  padding: 3.4722222222rem 2.8935185185rem 0 4.0509259259rem;
+  transform: translateX(65px);
+  width: 60.1273148148rem;
+  padding: 2.8935185185rem 0 2.3148148148rem;
+  margin: 0 auto;
 }
 .team .team_student h2 {
   display: flex;
   align-items: center;
   color: #000;
-  font-size: 2.7199074074rem;
+  font-size: 1.8518518519rem;
   font-weight: 600;
-  margin-bottom: 4.0509259259rem;
+  margin-bottom: 2.3148148148rem;
 }
 .team .team_student h2 .xian {
-  margin-right: 0.9259259259rem;
+  margin-right: 0.3472222222rem;
   width: 0.462962963rem;
-  height: 1.9675925926rem;
+  height: 1.4467592593rem;
   background-color: #587559;
 }
 .team .team_student .team_student_first {
   display: flex;
-  margin-bottom: 2.025462963rem;
+  justify-content: space-between;
 }
 .team .team_student .team_student_first li {
   display: flex;
   flex-direction: column;
-  width: 27.6041666667rem;
-  margin-right: 2.8935185185rem;
+  width: 17.4189814815rem;
 }
 .team .team_student .team_student_first li .avg {
-  width: 100%;
+  width: 8.5069444444rem;
+  height: 11.5162037037rem;
   display: flex;
   justify-content: flex-end;
 }
 .team .team_student .team_student_first li .avg img {
-  width: 11.2847222222rem;
-  height: 15.0462962963rem;
+  width: 100%;
+  height: 100%;
 }
 .team .team_student .team_student_first li h3 {
   color: #000;
-  font-size: 2.3148148148rem;
+  font-size: 1.5625rem;
   font-weight: 600;
   margin: 0.5787037037rem 0;
 }
 .team .team_student .team_student_first li p {
+  width: 100%;
   color: #000;
-  font-size: 1.3310185185rem;
+  font-size: 0.9259259259rem;
   font-weight: 500;
   line-height: 1.25;
+  text-align: justify;
 }
 .team .team_student .team_student_last {
   display: flex;
+  margin-top: 2.3148148148rem;
+  justify-content: space-between;
 }
-.team .team_student .team_student_last li:first-child, .team .team_student .team_student_last li:nth-child(2) {
+.team .team_student .team_student_last li {
   display: flex;
   flex-direction: column;
-  width: 26.8518518519rem;
-  margin-right: 2.8935185185rem;
+  width: 17.4189814815rem;
 }
-.team .team_student .team_student_last li:first-child .avg, .team .team_student .team_student_last li:nth-child(2) .avg {
-  width: 11.2847222222rem;
-  height: 15.0462962963rem;
+.team .team_student .team_student_last li .avg {
+  width: 8.5069444444rem;
+  height: 11.5162037037rem;
+  display: flex;
+  justify-content: flex-end;
 }
-.team .team_student .team_student_last li:first-child .avg img, .team .team_student .team_student_last li:nth-child(2) .avg img {
+.team .team_student .team_student_last li .avg img {
   width: 100%;
   height: 100%;
 }
-.team .team_student .team_student_last li:first-child h3, .team .team_student .team_student_last li:nth-child(2) h3 {
+.team .team_student .team_student_last li h3 {
   color: #000;
-  font-size: 2.3148148148rem;
+  font-size: 1.5625rem;
   font-weight: 600;
   margin: 0.5787037037rem 0;
 }
-.team .team_student .team_student_last li:first-child p, .team .team_student .team_student_last li:nth-child(2) p {
+.team .team_student .team_student_last li p {
   color: #000;
-  font-size: 1.3310185185rem;
+  font-size: 0.9259259259rem;
   font-weight: 500;
   line-height: 1.25;
-}
-.team .team_student .team_student_last li:last-child {
-  padding-bottom: 4.0509259259rem;
-  display: flex;
-  align-items: flex-end;
-  flex: 1;
-  color: #000;
-  font-size: 1.9675925926rem;
-  font-weight: 800;
-  line-height: 1.25;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=Team.css.map */
