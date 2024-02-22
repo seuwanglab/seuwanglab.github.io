@@ -1,323 +1,289 @@
-@charset "UTF-8";
-body {
-  padding-top: px2Rem(70px);
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link href="./fonts/Inner/index.css" rel="stylesheet" />
+    <link rel="icon" href="img/SEU-Emblem.png" />
+    <link rel="stylesheet" href="css/mudi.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/format.css" />
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./img/logo_xiaohui.png" alt="" />
+        </a>
+      </div>
+      <div class="title">News</div>
+      <ul class="buttons">
+        <li>
+          <a href="https://www.google.com" target="_blank"
+            ><img src="./img/search_black.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="Team.html"><img src="./img/people.png" alt="" /></a>
+        </li>
+        <li mdui-drawer="{target: '#left-drawer'}">
+          <img src="./img/menu.png" alt="" />
+        </li>
+      </ul>
+    </header>
+    <div class="news">
+      <div class="news_bg">
+        <img src="./img/litang.png" alt="" />
+      </div>
+      <div class="news_left">
+        <ul>
+          <li><a href="Team.html">Team</a></li>
+          <li><a href="News.html">News</a></li>
+          <li><a href="Research.html">Research</a></li>
+          <li><a href="Publications.html">Publications</a></li>
+          <li><a href="Beauty.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="news_center">
+        <ul>
+          <li>
 
-/*媒体查询,不同屏幕下的根元素字体大小设置，利于rem*/
-@media screen and (max-width: 8360px) {
-  html {
-    font-size: 83.6px !important;
-  }
-}
-@media screen and (max-width: 8160px) {
-  html {
-    font-size: 81.6px !important;
-  }
-}
-@media screen and (max-width: 7960px) {
-  html {
-    font-size: 79.6px !important;
-  }
-}
-@media screen and (max-width: 7760px) {
-  html {
-    font-size: 77.6px !important;
-  }
-}
-@media screen and (max-width: 7560px) {
-  html {
-    font-size: 75.6px !important;
-  }
-}
-@media screen and (max-width: 7360px) {
-  html {
-    font-size: 73.6px !important;
-  }
-}
-@media screen and (max-width: 7160px) {
-  html {
-    font-size: 71.6px !important;
-  }
-}
-@media screen and (max-width: 6960px) {
-  html {
-    font-size: 69.6px !important;
-  }
-}
-@media screen and (max-width: 6760px) {
-  html {
-    font-size: 67.6px !important;
-  }
-}
-@media screen and (max-width: 6560px) {
-  html {
-    font-size: 65.6px !important;
-  }
-}
-@media screen and (max-width: 6360px) {
-  html {
-    font-size: 63.6px !important;
-  }
-}
-@media screen and (max-width: 6160px) {
-  html {
-    font-size: 61.6px !important;
-  }
-}
-@media screen and (max-width: 5960px) {
-  html {
-    font-size: 59.6px !important;
-  }
-}
-@media screen and (max-width: 5760px) {
-  html {
-    font-size: 57.6px !important;
-  }
-}
-@media screen and (max-width: 5560px) {
-  html {
-    font-size: 55.6px !important;
-  }
-}
-@media screen and (max-width: 5360px) {
-  html {
-    font-size: 53.6px !important;
-  }
-}
-@media screen and (max-width: 5160px) {
-  html {
-    font-size: 51.6px !important;
-  }
-}
-@media screen and (max-width: 4960px) {
-  html {
-    font-size: 49.6px !important;
-  }
-}
-@media screen and (max-width: 4760px) {
-  html {
-    font-size: 47.6px !important;
-  }
-}
-@media screen and (max-width: 4560px) {
-  html {
-    font-size: 45.6px !important;
-  }
-}
-@media screen and (max-width: 4360px) {
-  html {
-    font-size: 43.6px !important;
-  }
-}
-@media screen and (max-width: 4160px) {
-  html {
-    font-size: 41.6px !important;
-  }
-}
-@media screen and (max-width: 3960px) {
-  html {
-    font-size: 39.6px !important;
-  }
-}
-@media screen and (max-width: 3760px) {
-  html {
-    font-size: 37.6px !important;
-  }
-}
-@media screen and (max-width: 3560px) {
-  html {
-    font-size: 35.6px !important;
-  }
-}
-@media screen and (max-width: 3360px) {
-  html {
-    font-size: 33.6px !important;
-  }
-}
-@media screen and (max-width: 3160px) {
-  html {
-    font-size: 31.6px !important;
-  }
-}
-@media screen and (max-width: 2960px) {
-  html {
-    font-size: 29.6px !important;
-  }
-}
-@media screen and (max-width: 2760px) {
-  html {
-    font-size: 27.6px !important;
-  }
-}
-@media screen and (max-width: 2560px) {
-  html {
-    font-size: 25.6px !important;
-  }
-}
-@media screen and (max-width: 2360px) {
-  html {
-    font-size: 23.6px !important;
-  }
-}
-@media screen and (max-width: 2160px) {
-  html {
-    font-size: 21.6px !important;
-  }
-}
-@media screen and (max-width: 1920px) {
-  html {
-    font-size: 19.2px !important;
-  }
-}
-@media screen and (max-width: 1728px) {
-  html {
-    font-size: 17.28px !important;
-  }
-}
-@media screen and (max-width: 1520px) {
-  html {
-    font-size: 15.2px !important;
-  }
-}
-@media screen and (max-width: 1420px) {
-  html {
-    font-size: 14.2px !important;
-  }
-}
-@media screen and (max-width: 1366px) {
-  html {
-    font-size: 13.66px !important;
-  }
-}
-@media screen and (max-width: 1280px) {
-  html {
-    font-size: 12.8px !important;
-  }
-}
-@media screen and (max-width: 1140px) {
-  html {
-    font-size: 11.4px !important;
-  }
-}
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 10.24px !important;
-  }
-}
-@media screen and (max-width: 924px) {
-  html {
-    font-size: 9.24px !important;
-  }
-}
-@media screen and (max-width: 800px) {
-  html {
-    font-size: 8px !important;
-  }
-}
-.news {
-  width: 100%;
-  position: relative;
-}
-.news .news_bg {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  padding-top: 4.0509259259rem;
-}
-.news .news_bg img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.news .news_left {
-  position: absolute;
-  top: 8.1018518519rem;
-  left: 2.5462962963rem;
-}
-.news .news_left ul {
-  display: flex;
-  flex-direction: column;
-}
-.news .news_left ul li {
-  margin-bottom: 0.7523148148rem;
-}
-.news .news_left ul li a {
-  color: #000;
-  font-size: 1.1574074074rem;
-  font-weight: 800;
-  transition: 0.3s;
-}
-.news .news_left ul li a:hover {
-  color: #fccf00;
-}
-.news .news_left ul li a:active {
-  color: #587558;
-}
-.news .news_left ul li:last-child {
-  margin-bottom: 0;
-}
-.news .news_center {
-  padding-top: 8.1018518519rem;
-  width: 54.1087962963rem;
-  margin: 0 auto;
-  flex: 1;
-}
-.news .news_center ul {
-  width: 100%;
-}
-.news .news_center ul li {
-  padding-left: 1.7361111111rem;
-  width: 100%;
-  margin-bottom: 3.4722222222rem;
-  display: flex;
-  justify-content: space-between;
-}
-.news .news_center ul li .cover {
-  width: 27.025462963rem;
-  height: 13.9467592593rem;
-}
-.news .news_center ul li .cover img {
-  border-radius: 0.6944444444rem;
-  width: 100%;
-  height: 100%;
-  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
-}
-.news .news_center ul li .info {
-  width: 26.0416666667rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-.news .news_center ul li .info h3 {
-  font-size: 1.2731481481rem;
-  font-weight: 800;
-  color: #000;
-  transition: all 0.3s ease;
-}
-.news .news_center ul li .info p {
-  line-height: 1.3;
-  color: #000;
-  font-size: 1.2731481481rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-align: justify;
-}
-.news .news_center ul li .info a {
-  transition: 0.3s;
-}
-.news .news_center ul li .info a:hover {
-  color: #fccf00;
-}
-.news .news_center ul li .info a:active {
-  color: #587558;
-}
-.news .news_right {
-  width: 8.6805555556rem;
-}
+            <div class="cover">
+              <img src="./img/news-0222.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>February- 2024</h3>
+              <p>
+                Our paper entitled Tracking and Navigation of a Microswarm Under Laser Speckle Contrast Imaging for Targeted Delivery has been published in Science Robotics.<a
+                  target="_blank"
+                  href="https://www.science.org/doi/10.1126/scirobotics.adh1978"
+                  >[Link]</a
+                >
+              </p>
+            </div>
+          </li>
+          <li>
 
-/*# sourceMappingURL=news.css.map */
+            <div class="cover">
+              <img src="./img/news2401.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>January- 2024</h3>
+              <p>
+                Dr. Wang Joined The lnternational Journal of Extreme Manufacturing as Youth Editor入选《极端制造》青年编委。<a
+                  target="_blank"
+                  href="http://cn.ijemnet.com/"
+                  >[极端制造]</a
+                >[<a
+                target="_blank"
+                href="http://www.ijemnet.com/"
+                >Extreme Manufacturing</a
+              >] 。
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <img src="./img/n0.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>December- 2023</h3>
+              <p>
+                Our book entitled Collective Behavior of Magnetic Micro/Nanorobots: Control, Imaging, and Applications is online!<a
+                  target="_blank"
+                  href="https://www.taylorfrancis.com/books/mono/10.1201/9781032665788/collective-behavior-magnetic-micro-nanorobots-qianqian-wang-jiangfan-yu"
+                  >[Link]</a
+                >
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <img src="./img/news-11.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>November- 2023</h3>
+              <p>
+                Our paper entitled Untethered Micro/ Nanorobots for Remote Sensing: Towards Intelligent Platform has been published in Nano-Micro Letters.<a
+                  target="_blank"
+                  href="https://link.springer.com/article/10.1007/s40820-023-01261-9?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20231130&utm_content=10.1007/s40820-023-01261-9"
+                  >[Link]</a
+                >
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <img src="./img/n2.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>November- 2023</h3>
+              <p>
+                Dr. Wang won the "Open Science Excellent Author Program" due to
+                the high impact of our Advanced Intelligent Systems article.
+                <a
+                  target="_blank"
+                  href="https://onlinelibrary.wiley.com/doi/10.1002/aisy.202300108"
+                  >[Link]</a
+                >
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <img src="./img/n3.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>September- 2023</h3>
+              <p>
+                In 2023, during the Teachers' Day
+                celebration assembly, Teacher Wang delivered a speech as a
+                representative of young teachers, sharing thoughts and insights on education
+                and the teacher's
+                mission.<a
+                  target="_blank"
+                  href="https://news.seu.edu.cn/2023/0908/c5486a463987/page.htm"
+                  >[Link]</a
+                >
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <img src="./img/n4.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>September- 2023</h3>
+              <p>
+                Our Springer book entitled Magnetic Micro and Nanorobot Swarms:
+                From Fundamentals to Applications is online!
+                <a
+                  target="_blank"
+                  href="https://link.springer.com/book/10.1007/978-981-99-3036-4?sap-outbound-id=9B0C1554AC966F5F02D69745F51100FE36615467&utm_source=automation&utm_medium=email&utm_campaign=000_LAN36_0000019290_Book%20author%20congrats%20fallback&utm_content=EN_34155_20231208&mkt-key=A1C59CB911661EEEA5A88CCE033AE6A5"
+                  >[Link]</a
+                >
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <img src="./img/n5.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>August- 2023</h3>
+              <p>
+                Dr. Wang Won the MINE Outstanding Young Scientist Award（“MINE
+                2023优秀青年科学家奖”）.
+                <a
+                  target="_blank"
+                  href="https://mp.weixin.qq.com/s/Lc2xN5xDvLRi8hzPNjKGPQ"
+                  >[Link]</a
+                >
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <img src="./img/n6.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>March- 2023</h3>
+              <p>
+                Our Science Advances paper "Ultrasound Doppler-guided
+                real-time navigation of a magnetic microswarm for active
+                endovascular delivery" has been highlighted as "Hot Paper" (Top
+                0.1%)!
+                <a
+                  target="_blank"
+                  href="https://www.science.org/doi/full/10.1126/sciadv.abe5914"
+                  >[Link]</a
+                >
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <img src="./img/n7.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>November- 2023</h3>
+              <p>
+                Dr. Wang won the 1st Xiaomi Young Talents
+                Program（首届“小米青年学者”）[<a
+                  target="_blank"
+                  href="https://mp.weixin.qq.com/s/ffFc8hxB74ggCxY_F0ms3w"
+                  >小米公益基金会</a
+                >][<a
+                  target="_blank"
+                  href="https://mp.weixin.qq.com/s/saWBJu5uC1peF6I-or7-_g?poc_token=HFmJhWWjLtK2rwDVw_lGpy_oxe3iSUnRlRD2T4JX"
+                  >东南大学教育基金会</a
+                >] 。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="news_right"></div>
+    </div>
+    <footer class="footer">
+      <div class="footer_left">
+        <div class="logo">
+          <a href="#"> <img src="./img/xiaohui.png" alt="" /></a>
+        </div>
+        <ul>
+          <li><a href="Team.html">Team</a></li>
+          <li><a href="News.html">News</a></li>
+          <li><a href="Research.html">Research</a></li>
+          <li><a href="Publications.html">Publications</a></li>
+          <li><a href="Beauty.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer_right">
+        <div class="double_logo">
+          <a target="_blank" href="https://www.seu.edu.cn/"
+            ><img src="./img/SEU-Emblem.png" alt=""
+          /></a>
+          <a target="_blank" href="https://me.seu.edu.cn/"
+            ><img src="./img/SEU-ME-Emblem.png" alt=""
+          /></a>
+        </div>
+        <p>
+          Intelligent Small-<br />scale Robotics Lab,<br />Southeast University
+        </p>
+      </div>
+    </footer>
+    <div
+      class="mdui-drawer mdui-drawer-right mdui-drawer-close"
+      id="left-drawer"
+    >
+      <div class="draw_header">
+        <div class="logo">
+          <a href="index.html"> <img src="./img/foot-minilogo.png" alt="" /></a>
+        </div>
+        <ul>
+          <li>
+            <a href="#"><img src="./img/搜索黑 1.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/个人黑%201.png" alt="" /></a>
+          </li>
+          <li mdui-drawer="{target: '#left-drawer'}">
+            <span> <img src="./img/取消黑%201.png" alt="" /></span>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav_drop">
+        <li><a href="Team.html">Team</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Publications.html">Publications</a></li>
+        <li><a href="Beauty.html">Gallery</a></li>
+      </ul>
+    </div>
+  </body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/mudi.js"></script>
+</html>
