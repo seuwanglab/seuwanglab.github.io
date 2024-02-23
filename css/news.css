@@ -307,6 +307,25 @@ body {
   transition: all 0.3s ease;
   text-align: justify;
 }
+
+.news .news_center ul li .info p .strong {
+  line-height: 1.3;
+  color: #000;
+  font-size: 1.2731481481rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-align: justify;
+}
+
+.news .news_center ul li .info p .journal_name {
+  line-height: 1.3;
+  color: #000;
+  font-size: 1.2731481481rem;
+  font-weight: 700;
+  font-style: italic;
+  font-family: "Inter", sans-serif;
+}
+
 .news .news_center ul li .info a {
   transition: 0.3s;
 }
