@@ -274,9 +274,6 @@ body {
   font-weight: 600;
   margin-top: 3.4722222222rem;
 }
-.smaller-text {
-  font-size: 0.8rem;
-}
 .publications .publications_center h3:nth-of-type(2) {
   margin-top: 5.787037037rem;
   margin-bottom: 1.4467592593rem;
@@ -286,7 +283,6 @@ body {
   margin-bottom: 1.4467592593rem;
 }
 .publications .publications_center .text {
-  text-align: justify;
   width: 59.4907407407rem;
   margin: 0.5787037037rem auto 1.7361111111rem;
   display: flex;
@@ -298,7 +294,7 @@ body {
   line-height: 1.5;
 }
 .publications .publications_center .text p:first-child {
-  width: 2.3148148148rem;
+  width: 1.4467592593rem;
   display: flex;
   justify-content: flex-end;
   padding-right: 0.2893518519rem;
@@ -308,31 +304,19 @@ body {
   flex: 1;
 }
 .publications .publications_center .text p span {
-  text-align: justify;
   color: #000;
   font-family: Times_New_Roman;
   font-size: 0.8680555556rem;
-  font-style: regular;
+  font-style: italic;
   font-weight: 400;
 }
 .publications .publications_center .text p .strong {
-  text-align: justify;
   color: #000;
   font-size: 0.8680555556rem;
   font-weight: 700;
   font-style: normal;
   font-family: "Inter", sans-serif;
 }
-.publications .publications_center .text p .journal_name {
-  text-align: justify;
-  color: #000;
-  font-size: 0.8680555556rem;
-  font-weight: 700;
-  font-style: italic;
-  font-family: "Inter", sans-serif;
-}
-
-
 .publications .publications_center .text p a {
   transition: 0.3s;
 }
@@ -361,6 +345,9 @@ body {
 }
 .publications .publications_right {
   width: 17.650462963rem;
+}
+.publications .Papers p:first-child {
+  width: 1.0416666667rem !important;
 }
 
 /*# sourceMappingURL=publications.css.map */
