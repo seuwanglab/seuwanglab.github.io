@@ -411,6 +411,15 @@ body {
   font-size: 1.0416666667rem;
   font-weight: 700;
 }
+.journal_name {
+  font-weight: 700; /* 加粗 */
+}
+.strong {
+  color: #000;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+}
 .intro .intro_left .text-default p > i,
 .intro .intro_right .text-default p > i {
   font-style: italic;
