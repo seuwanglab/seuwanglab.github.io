@@ -286,6 +286,23 @@ body {
   height: 100%;
   box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
 }
+
+.news .news_center ul li .strong {
+  color: #000;
+  font-size: 1.2555555555rem;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+}
+
+.news .news_center ul li .journal_name {
+  color: #000;
+  font-size: 1.2555555555rem;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+}
+
 .news .news_center ul li .info {
   width: 26.0416666667rem;
   display: flex;
