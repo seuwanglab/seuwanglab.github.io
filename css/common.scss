@@ -126,6 +126,17 @@
       font-size: px2Rem(16px);
       font-weight: 500;
     }
+    .visitor-stats {
+      margin-top: px2Rem(10px);
+      color: #999;
+      font-size: px2Rem(14px);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      .visitor-item {
+        display: block;
+      }
+    }
   }
 }
 

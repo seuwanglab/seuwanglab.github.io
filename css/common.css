@@ -340,6 +340,17 @@ body {
   font-size: 0.9259259259rem;
   font-weight: 500;
 }
+.footer .footer_right .visitor-stats {
+  margin-top: 0.5787037037rem;
+  color: #999;
+  font-size: 0.8101851852rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer_right .visitor-stats .visitor-item {
+  display: block;
+}
 
 .mdui-drawer-open {
   width: 50%;
