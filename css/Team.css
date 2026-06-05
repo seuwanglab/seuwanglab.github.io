@@ -218,30 +218,29 @@ body {
   font-family: Times_New_Roman;
   src: url(../fonts/TimesNewRoman.ttf);
 }
+body {
+  min-width: 0;
+}
+
 .team {
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 5.787037037rem;
+  background-image: url("../img/litang.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .team .team_bg {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  padding-top: 4.0509259259rem;
-}
-.team .team_bg img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  display: none;
 }
 .team .team_wrap {
   width: 100%;
   position: relative;
+  z-index: 1;
 }
 .team .team_wrap .team_left {
   position: absolute;
@@ -277,38 +276,30 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 1.9675925926rem;
 }
 .team .team_wrap .team_center .team_center_top {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-}
-.team .team_wrap .team_center .team_center_top .avg {
-  width: 8.5069444444rem;
-  height: 11.5162037037rem;
-}
-.team .team_wrap .team_center .team_center_top .avg img {
-  width: 100%;
-  height: 100%;
+  justify-content: flex-start;
 }
 .team .team_wrap .team_center .team_center_top .text {
-  transform: translateY(-5px);
-  width: 51.2731481481rem;
+  width: 100%;
   display: flex;
-  padding-left: 0.5787037037rem;
   flex-direction: column;
 }
 .team .team_wrap .team_center .team_center_top .text h3 {
   color: #000;
-  font-size: 2.0833333333rem;
+  font-size: 1.9675925926rem;
   font-weight: 700;
+  margin-bottom: 0.462962963rem;
 }
 .team .team_wrap .team_center .team_center_top .text h4 {
-  line-height: 1.09;
-  color: #8E8D8B;
-  font-size: 1.2731481481rem;
+  line-height: 1.32;
+  color: #666;
+  font-size: 1.0416666667rem;
   font-weight: 600;
-  transform: translateY(4px);
+  max-width: 53.2407407407rem;
 }
 .team .team_wrap .team_center .team_center_top .text h4 sup {
   font-size: 0.7523148148rem;
@@ -326,19 +317,24 @@ body {
   font-weight: 500;
 }
 .team .team_wrap .team_center .team_center_bottom {
-  transform: translateY(-5px);
   text-align: justify;
   color: #000;
-  font-size: 1.0416666667rem;
+  font-size: 0.9837962963rem;
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.45;
   letter-spacing: 0.18px;
+  max-width: 56.712962963rem;
+}
+.team .team_wrap .team_center .team_center_bottom p + p {
+  margin-top: 0.6944444444rem !important;
 }
 .team .team_wrap .team_center .team_center_bottom i {
   font-style: italic;
   font-family: Times_New_Roman;
 }
 .team .team_ph {
+  position: relative;
+  z-index: 1;
   transform: translateX(65px);
   width: 60.1273148148rem;
   padding: 2.8935185185rem 0 0rem;
@@ -391,6 +387,8 @@ body {
   text-align: justify;
 }
 .team .team_student {
+  position: relative;
+  z-index: 1;
   transform: translateX(65px);
   width: 60.1273148148rem;
   padding: 2.8935185185rem 0 2.3148148148rem;
@@ -410,105 +408,109 @@ body {
   height: 1.4467592593rem;
   background-color: #587559;
 }
-.team .team_student .team_student_first {
-  display: flex;
-  justify-content: space-between;
-}
-.team .team_student .team_student_first li {
-  display: flex;
-  flex-direction: column;
-  width: 17.4189814815rem;
-}
-.team .team_student .team_student_first li .avg {
-  width: 8.5069444444rem;
-  height: 11.5162037037rem;
-  display: flex;
-  justify-content: flex-end;
-}
-.team .team_student .team_student_first li .avg img {
-  width: 100%;
-  height: 100%;
-}
-.team .team_student .team_student_first li h3 {
-  color: #000;
-  font-size: 1.5625rem;
-  font-weight: 600;
-  margin: 0.5787037037rem 0;
-}
-.team .team_student .team_student_first li p {
-  width: 100%;
-  color: #000;
-  font-size: 0.9259259259rem;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: justify;
-}
+.team .team_student .team_student_first,
 .team .team_student .team_student_last {
-  display: flex;
-  margin-top: 2.3148148148rem;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5046296296rem 2.1990740741rem;
+  justify-content: stretch;
+  margin-top: 1.5046296296rem;
 }
+.team .team_student .team_student_first:first-of-type,
+.team .team_student .team_student_last:first-of-type {
+  margin-top: 0;
+}
+.team .team_student .team_student_first li,
 .team .team_student .team_student_last li {
   display: flex;
   flex-direction: column;
-  width: 17.4189814815rem;
+  min-width: 0;
+  min-height: 8.3333333333rem;
 }
-.team .team_student .team_student_last li .avg {
-  width: 8.5069444444rem;
-  height: 11.5162037037rem;
-  display: flex;
-  justify-content: flex-end;
-}
-.team .team_student .team_student_last li .avg img {
-  width: 100%;
-  height: 100%;
-}
+.team .team_student .team_student_first li h3,
 .team .team_student .team_student_last li h3 {
   color: #000;
-  font-size: 1.5625rem;
-  font-weight: 600;
-  margin: 0.5787037037rem 0;
+  font-size: 1.3310185185rem;
+  font-weight: 700;
+  margin: 0 0 0.5787037037rem;
 }
+.team .team_student .team_student_first li p,
 .team .team_student .team_student_last li p {
+  width: 100%;
   color: #000;
-  font-size: 0.9259259259rem;
+  font-size: 0.8680555556rem;
   font-weight: 500;
-  line-height: 1.25;
-  text-align: justify;
+  line-height: 1.42;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+.team .team_student.team_alumni {
+  padding-top: 1.6203703704rem;
+}
+.team .team_student.team_alumni .team_student_first,
+.team .team_student.team_alumni .team_student_last {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.0416666667rem 1.3888888889rem;
+}
+.team .team_student.team_alumni .team_student_first li,
+.team .team_student.team_alumni .team_student_last li {
+  min-height: auto;
+  padding-top: 0.5787037037rem;
+}
+.team .team_student.team_alumni .team_student_first li p,
+.team .team_student.team_alumni .team_student_last li p {
+  font-size: 0.9837962963rem;
+  font-weight: 600;
+  text-align: left;
 }
 
-.team .team_student .team_student_last1 {
-  display: flex;
-  margin-top: 2.3148148148rem;
-  justify-content: space-between;
+@media screen and (max-width: 1140px) {
+  .team .team_wrap .team_left {
+    display: none;
+  }
+  .team .team_wrap .team_center {
+    width: calc(100% - 48px);
+    transform: none;
+    padding-top: 4.6296296296rem;
+  }
+  .team .team_student {
+    width: calc(100% - 48px);
+    transform: none;
+  }
+  .team .team_student .team_student_first,
+  .team .team_student .team_student_last {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .team .team_student.team_alumni .team_student_first,
+  .team .team_student.team_alumni .team_student_last {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
-.team .team_student .team_student_last1 li {
-  display: flex;
-  flex-direction: column;
-  width: 17.4189814815rem;
-}
-.team .team_student .team_student_last1 li .avg {
-  width: 8.5069444444rem;
-  height: 11.5162037037rem;
-  display: flex;
-  justify-content: flex-end;
-}
-.team .team_student .team_student_last1 li .avg img {
-  width: 100%;
-  height: 100%;
-}
-.team .team_student .team_student_last1 li h3 {
-  color: #000;
-  font-size: 1.5625rem;
-  font-weight: 600;
-  margin: 0.5787037037rem 0;
-}
-.team .team_student .team_student_last1 li p {
-  color: #000;
-  font-size: 0.9259259259rem;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: justify;
+@media screen and (max-width: 640px) {
+  .team .team_wrap .team_center {
+    width: calc(100% - 32px);
+    padding-top: 3.2407407407rem;
+  }
+  .team .team_wrap .team_center .team_center_top .text h3 {
+    font-size: 1.7361111111rem;
+  }
+  .team .team_wrap .team_center .team_center_top .text h4 {
+    font-size: 0.9837962963rem;
+  }
+  .team .team_wrap .team_center .team_center_bottom {
+    font-size: 0.9259259259rem;
+  }
+  .team .team_student {
+    width: calc(100% - 32px);
+  }
+  .team .team_student h2 {
+    margin-bottom: 1.3888888889rem;
+  }
+  .team .team_student .team_student_first,
+  .team .team_student .team_student_last, .team .team_student.team_alumni .team_student_first, .team .team_student.team_alumni .team_student_last {
+    grid-template-columns: 1fr;
+    gap: 1.2731481481rem;
+  }
 }
 
 /*# sourceMappingURL=Team.css.map */
